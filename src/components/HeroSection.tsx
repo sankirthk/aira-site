@@ -1,5 +1,5 @@
 import { latestRelease } from "../content/release";
-import heroMainImage from "../../../assets/CreamBackGround/Main/Main.png";
+import heroMainImage from "../assets/CreamBackGround/Main/Main.png";
 
 export function HeroSection() {
   return (

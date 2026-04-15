@@ -1,6 +1,6 @@
-import notchLeftTilt from "../../../assets/TerracottaBackGround/NotchCloseUp/LeftTilt.png";
-import pillRightTilt from "../../../assets/TerracottaBackGround/PillWindow/RightTilt.png";
-import editorLeft from "../../../assets/CreamBackGround/ScriptEditor/LeftTilt.png";
+import notchLeftTilt from "../assets/TerracottaBackGround/NotchCloseUp/LeftTilt.png";
+import pillRightTilt from "../assets/TerracottaBackGround/PillWindow/RightTilt.png";
+import editorLeft from "../assets/CreamBackGround/ScriptEditor/LeftTilt.png";
 
 const showcaseItems = [
   {
