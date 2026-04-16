@@ -69,8 +69,8 @@ export function PrivacyPage() {
         <section>
           <h2>Third-party services</h2>
           <p>
-            None. Aira does not integrate with any analytics, advertising,
-            crash reporting, or cloud storage service.
+            None. Aira does not integrate with any analytics, advertising, crash
+            reporting, or cloud storage service.
           </p>
         </section>
 
