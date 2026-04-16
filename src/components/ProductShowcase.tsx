@@ -31,7 +31,7 @@ const showcaseItems = [
   },
   {
     eyebrow: "Write, import, organize",
-    title: "Script Manager",
+    title: "Script Editor",
     body: "Write your scripts inside Aira, or bring them in from anywhere. Supports import from PDF, Word docs, plain text, and Markdown. Add performance cues in square brackets like [PAUSE] or [SMILE], and everything stays stored locally on your Mac.",
     bullets: [
       "Import from PDF, DOCX, TXT, Markdown",

@@ -33,7 +33,6 @@ export function InstallationGuide() {
         <div className="install-list">
           {steps.map((step) => (
             <article className="install-step" key={step.number}>
-              <div className="install-step-icon">{step.number}</div>
               <div>
                 <h3>{step.title}</h3>
                 <p>{step.description}</p>

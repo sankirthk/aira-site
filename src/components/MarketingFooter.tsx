@@ -42,11 +42,20 @@ export function MarketingFooter() {
           <h3>Contact</h3>
           <ul>
             <li>
-              <a href="mailto:feedback@aira.app">feedback@aira.app</a>
+              <a href="mailto:feedback@useaira.co">feedback@useaira.co</a>
             </li>
             <li>
-              <a href={latestRelease.releaseNotesUrl}>Release Notes</a>
+              <a href="/changelog">Changelog</a>
             </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/license">License</a></li>
+            <li><a href="/security">Security</a></li>
           </ul>
         </div>
       </div>

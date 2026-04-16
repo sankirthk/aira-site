@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Wordmark } from "./Wordmark";
 
 export function LegalLayout({ children }: { children: React.ReactNode }) {
@@ -6,15 +5,15 @@ export function LegalLayout({ children }: { children: React.ReactNode }) {
     <div className="site-root">
       <header className="site-header">
         <div className="shell header-shell">
-          <Link to="/">
+          <a href="/">
             <Wordmark />
-          </Link>
+          </a>
           <nav className="site-nav" aria-label="Primary">
-            <Link to="/#features">Features</Link>
-            <Link to="/#faq">FAQ</Link>
-            <Link to="/" className="button button-nav">
+            <a href="/#features">Features</a>
+            <a href="/#faq">FAQ</a>
+            <a href="/" className="button button-nav">
               ← Back to site
-            </Link>
+            </a>
           </nav>
         </div>
       </header>
@@ -27,10 +26,10 @@ export function LegalLayout({ children }: { children: React.ReactNode }) {
         <div className="shell footer-bottom">
           <p>© 2026 Aira. All rights reserved.</p>
           <nav className="legal-footer-nav">
-            <Link to="/privacy">Privacy</Link>
-            <Link to="/license">License</Link>
-            <Link to="/security">Security</Link>
-            <Link to="/changelog">Changelog</Link>
+            <a href="/privacy">Privacy</a>
+            <a href="/license">License</a>
+            <a href="/security">Security</a>
+            <a href="/changelog">Changelog</a>
           </nav>
           <p>macOS 14.4+</p>
         </div>
