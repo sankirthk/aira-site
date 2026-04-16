@@ -10,6 +10,16 @@ export type ReleaseMetadata = {
   summary: string[];
 };
 
+export type ChangelogEntry = {
+  version: string;
+  date: string;
+  tag: "beta" | "release" | "hotfix";
+  changes: {
+    type: "added" | "changed" | "fixed" | "removed";
+    description: string;
+  }[];
+};
+
 export const latestRelease: ReleaseMetadata = {
   version: "",
   tag: "",
@@ -20,8 +30,22 @@ export const latestRelease: ReleaseMetadata = {
   releaseNotesUrl: "https://github.com/sankirthk/aira-releases/releases",
   distributionRepo: "sankirthk/aira-releases",
   summary: [
-    "Voice-Sync follows your script with on-device speech recognition.",
+    "Voice activated scrolling follows your script with on-device speech recognition.",
     "Notch and pill overlays stay hidden from screen sharing.",
     "Built-in script editing and local-first storage are included in the beta.",
   ],
 };
+
+export const changelog: ChangelogEntry[] = [
+  // Add entries here as you ship releases. Example:
+  // {
+  //   version: "0.1.0",
+  //   date: "2026-04-16",
+  //   tag: "beta",
+  //   changes: [
+  //     { type: "added", description: "Initial public beta release." },
+  //     { type: "added", description: "Voice activated scrolling with on-device speech recognition." },
+  //     { type: "added", description: "Notch overlay hidden from screen sharing." },
+  //   ]
+  // }
+];

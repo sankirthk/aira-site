@@ -58,7 +58,7 @@ export function MarketingFooter() {
             ? `${latestRelease.betaLabel} ${latestRelease.version}`
             : latestRelease.betaLabel}
         </div>
-        <p>macOS 13.0+</p>
+        <p>macOS 14.4+</p>
       </div>
     </footer>
   );

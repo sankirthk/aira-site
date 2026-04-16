@@ -46,7 +46,7 @@ export function InstallationGuide() {
           <a className="button button-primary" href={latestRelease.dmgUrl}>
             Download Aira
           </a>
-          <p>macOS 13.0+ • No account required</p>
+          <p>macOS 14.4+ • No account required</p>
         </div>
       </div>
     </section>

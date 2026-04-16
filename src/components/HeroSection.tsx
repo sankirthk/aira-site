@@ -31,7 +31,7 @@ export function HeroSection() {
           </div>
 
           <p className="hero-footnote">
-            macOS 13.0+ • Free • No account required
+            macOS 14.4+ • Free • No account required
           </p>
         </div>
 

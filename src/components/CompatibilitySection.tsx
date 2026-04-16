@@ -10,7 +10,7 @@ export function CompatibilitySection() {
         <div className="compat-grid">
           <article className="compat-card compat-card-sage">
             <h3>macOS only</h3>
-            <p>Requires macOS 13.0 Ventura or later.</p>
+            <p>Requires macOS 14.4 Sonoma or later.</p>
             <ul>
               <li>Works on Apple Silicon</li>
               <li>Works on Intel processors</li>
