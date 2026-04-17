@@ -24,7 +24,11 @@ export function HeroSection() {
           </p>
 
           <div className="hero-actions">
-            <a className="button button-primary" href={latestRelease.dmgUrl} download>
+            <a
+              className="button button-primary"
+              href={latestRelease.dmgUrl}
+              download
+            >
               <DownloadIcon />
               Download
             </a>

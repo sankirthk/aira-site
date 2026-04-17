@@ -42,7 +42,11 @@ export function InstallationGuide() {
         </div>
 
         <div className="install-cta">
-          <a className="button button-primary" href={latestRelease.dmgUrl} download>
+          <a
+            className="button button-primary"
+            href={latestRelease.dmgUrl}
+            download
+          >
             Download Aira
           </a>
           <p>macOS 14.4+ • No account required</p>
