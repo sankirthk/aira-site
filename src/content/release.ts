@@ -21,13 +21,13 @@ export type ChangelogEntry = {
 };
 
 export const latestRelease: ReleaseMetadata = {
-  version: "",
-  tag: "",
-  releaseDate: "",
+  version: "1.0",
+  tag: "v0.1.0-beta.1",
+  releaseDate: "2026-04-17",
   betaLabel: "Public Beta",
-  notarized: false,
-  dmgUrl: "https://github.com/sankirthk/aira-releases/releases",
-  releaseNotesUrl: "https://github.com/sankirthk/aira-releases/releases",
+  notarized: true,
+  dmgUrl: "https://github.com/sankirthk/aira-releases/releases/download/v0.1.0-beta.1/Aira-1.0.dmg",
+  releaseNotesUrl: "https://github.com/sankirthk/aira-releases/releases/tag/v0.1.0-beta.1",
   distributionRepo: "sankirthk/aira-releases",
   summary: [
     "Voice activated scrolling follows your script with on-device speech recognition.",
