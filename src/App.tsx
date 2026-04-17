@@ -18,7 +18,7 @@ export function App() {
             <a href="#features">Features</a>
             <a href="#controls">Controls</a>
             <a href="#faq">FAQ</a>
-            <a className="button button-nav" href={latestRelease.dmgUrl}>
+            <a className="button button-nav" href={latestRelease.dmgUrl} download>
               Download
             </a>
           </nav>
