@@ -17,6 +17,9 @@ concurrency:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend/site
 
     steps:
       - name: Checkout
@@ -44,6 +47,9 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: validate
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend/site
 
     steps:
       - name: Checkout
@@ -66,7 +72,7 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./frontend/site/dist
 
   deploy-pages:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
