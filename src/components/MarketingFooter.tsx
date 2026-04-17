@@ -53,9 +53,15 @@ export function MarketingFooter() {
         <div>
           <h3>Legal</h3>
           <ul>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/license">License</a></li>
-            <li><a href="/security">Security</a></li>
+            <li>
+              <a href="/privacy">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/license">License</a>
+            </li>
+            <li>
+              <a href="/security">Security</a>
+            </li>
           </ul>
         </div>
       </div>

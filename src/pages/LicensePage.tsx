@@ -17,16 +17,16 @@ export function LicensePage() {
             documentation. This Agreement is a legally binding contract that
             includes terms that limit your legal rights and the Licensor&apos;s
             liability to you, and shall govern all access to and use of the
-            Software. You hereby agree, without limitation or alteration, to
-            all the terms and conditions contained herein.
+            Software. You hereby agree, without limitation or alteration, to all
+            the terms and conditions contained herein.
           </p>
 
           <p>
             By installing, copying, or otherwise using the Licensed Product
             (Software), the Licensee agrees to be bound by the terms and
             conditions outlined in this EULA. If the Licensee does not agree to
-            the terms and conditions outlined in this EULA, the Licensee may
-            not download, install, or use the Software.
+            the terms and conditions outlined in this EULA, the Licensee may not
+            download, install, or use the Software.
           </p>
         </section>
 
@@ -46,7 +46,9 @@ export function LicensePage() {
               Kalahasti.
             </li>
             <li>
-              <strong>&quot;Software&quot; / &quot;Licensed Product&quot;</strong>{" "}
+              <strong>
+                &quot;Software&quot; / &quot;Licensed Product&quot;
+              </strong>{" "}
               shall mean Aira, the Licensed Product provided pursuant to this
               EULA.
             </li>
@@ -70,9 +72,9 @@ export function LicensePage() {
         <section>
           <h2>Intellectual Property</h2>
           <p>
-            You hereby unconditionally agree that all right, title, and
-            interest in the copyrights and other intellectual property rights
-            in the Licensed Product reside exclusively with the Licensor. The
+            You hereby unconditionally agree that all right, title, and interest
+            in the copyrights and other intellectual property rights in the
+            Licensed Product reside exclusively with the Licensor. The
             trademarks, logos, designs, and service marks appearing on the
             Licensed Product are registered and unregistered marks of the
             Licensor. Nothing in this EULA or the Licensed Product grants you
@@ -125,9 +127,9 @@ export function LicensePage() {
             </li>
             <li>Use the Software for any illegal or unlawful purpose;</li>
             <li>
-              Gather factual content or any other portion of the Software by
-              any automated means, including but not limited to database
-              scraping or screen scraping.
+              Gather factual content or any other portion of the Software by any
+              automated means, including but not limited to database scraping or
+              screen scraping.
             </li>
           </ul>
         </section>
@@ -182,15 +184,15 @@ export function LicensePage() {
             <li>Terminated by the Licensee.</li>
           </ul>
           <p>
-            Either party may terminate this EULA immediately upon written
-            notice to the other party, including by electronic mail.
+            Either party may terminate this EULA immediately upon written notice
+            to the other party, including by electronic mail.
           </p>
 
           <h3>Non-Transferability</h3>
           <p>
-            The Licensee has the option to permanently transfer all rights
-            under this EULA, provided the recipient agrees to the terms of this
-            EULA. This EULA is not otherwise assignable or transferable by the
+            The Licensee has the option to permanently transfer all rights under
+            this EULA, provided the recipient agrees to the terms of this EULA.
+            This EULA is not otherwise assignable or transferable by the
             Licensee without the prior written consent of Sankirth Kalahasti,
             and any attempt to do so shall be void.
           </p>
@@ -207,22 +209,22 @@ export function LicensePage() {
           <p>
             Both parties agree that this EULA is the entire and exclusive
             statement and legal acknowledgment of the mutual understanding of
-            the parties and supersedes and cancels any previous written and
-            oral agreements and communications relating to the subject matter of
-            this EULA.
+            the parties and supersedes and cancels any previous written and oral
+            agreements and communications relating to the subject matter of this
+            EULA.
           </p>
 
           <h3>Severability</h3>
           <p>
-            No delay or failure to exercise any privilege, power, or right
-            under this EULA shall operate as a waiver of any of its terms. No
-            single or partial exercise of any right under this EULA shall
-            preclude further exercise of any other right. If any provision of
-            this EULA is deemed unenforceable or invalid in whole or in part by
-            a court of competent jurisdiction, such provision shall be limited
-            to the minimum extent necessary for this EULA to remain in full
-            force and effect. The remaining provisions shall continue to be
-            enforceable and valid.
+            No delay or failure to exercise any privilege, power, or right under
+            this EULA shall operate as a waiver of any of its terms. No single
+            or partial exercise of any right under this EULA shall preclude
+            further exercise of any other right. If any provision of this EULA
+            is deemed unenforceable or invalid in whole or in part by a court of
+            competent jurisdiction, such provision shall be limited to the
+            minimum extent necessary for this EULA to remain in full force and
+            effect. The remaining provisions shall continue to be enforceable
+            and valid.
           </p>
         </section>
 
@@ -251,8 +253,8 @@ export function LicensePage() {
             limitations shall apply regardless of the primary purpose of any
             limited remedy. Under no circumstances shall Sankirth
             Kalahasti&apos;s aggregate liability to the Licensee or any person
-            claiming through the Licensee exceed the actual monetary amount
-            paid by the Licensee to Sankirth Kalahasti for the Software. As the
+            claiming through the Licensee exceed the actual monetary amount paid
+            by the Licensee to Sankirth Kalahasti for the Software. As the
             Software is provided free of charge, this amount shall be zero.
           </p>
         </section>
@@ -273,10 +275,10 @@ export function LicensePage() {
         <section>
           <h2>Entire Agreement</h2>
           <p>
-            This Agreement constitutes the entire understanding between
-            Sankirth Kalahasti and the Licensee and supersedes all prior
-            agreements of the parties, whether written or oral, express or
-            implied, statement, condition, or representation or warranty.
+            This Agreement constitutes the entire understanding between Sankirth
+            Kalahasti and the Licensee and supersedes all prior agreements of
+            the parties, whether written or oral, express or implied, statement,
+            condition, or representation or warranty.
           </p>
         </section>
 
@@ -288,8 +290,8 @@ export function LicensePage() {
             Any legal action relating to this EULA shall be brought exclusively
             in the courts of New York, and all parties consent to the
             jurisdiction thereof. The prevailing party in any action to enforce
-            this EULA shall be entitled to recover costs and expenses
-            including, without limitation, legal fees.
+            this EULA shall be entitled to recover costs and expenses including,
+            without limitation, legal fees.
           </p>
         </section>
 

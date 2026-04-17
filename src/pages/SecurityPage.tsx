@@ -100,9 +100,9 @@ export function SecurityPage() {
               (MIT-compatible license) over HTTPS.
             </li>
             <li>
-              Every update package is signed with an EdDSA key. Sparkle
-              verifies this signature before applying any update, ensuring
-              packages have not been tampered with in transit.
+              Every update package is signed with an EdDSA key. Sparkle verifies
+              this signature before applying any update, ensuring packages have
+              not been tampered with in transit.
             </li>
           </ul>
         </section>
@@ -120,8 +120,8 @@ export function SecurityPage() {
               <tr>
                 <td>Microphone</td>
                 <td>
-                  Detects your voice to automatically scroll the teleprompter
-                  as you speak
+                  Detects your voice to automatically scroll the teleprompter as
+                  you speak
                 </td>
               </tr>
               <tr>
@@ -163,8 +163,7 @@ export function SecurityPage() {
           <h2>Vulnerability Disclosure</h2>
           <p>
             If you discover a security vulnerability in Aira, please contact us
-            at{" "}
-            <a href="mailto:feedback@useaira.co">feedback@useaira.co</a>. We
+            at <a href="mailto:feedback@useaira.co">feedback@useaira.co</a>. We
             aim to acknowledge reports within 48 hours and resolve confirmed
             issues as quickly as possible. We ask that you give us reasonable
             time to address a vulnerability before any public disclosure.
@@ -186,21 +185,66 @@ export function SecurityPage() {
             </thead>
             <tbody>
               {[
-                ["Do you have a documented information security policy?", "Yes — reflected in our Privacy Policy and this Security page."],
-                ["Do you encrypt data in transit?", "Yes — all network connections use HTTPS/TLS. Core app functionality requires no network access. The only connection made is for update checks via Sparkle over HTTPS."],
-                ["Do you encrypt data at rest?", "User data is stored locally on the user's device using standard macOS storage. We hold no server-side data. The app relies on macOS platform protections rather than additional application-layer encryption."],
-                ["Do you collect user data in the application?", "No. The Aira app collects zero personal data. All scripts and settings remain local to the device."],
-                ["Do you use third-party analytics in the application?", "No. The app has no analytics, telemetry, or crash reporting."],
-                ["Do you share or sell user data?", "No. We do not sell or share personal data with any third party."],
-                ["Where is data stored?", "User scripts: local device only (~/Library/Application Support/Aira/). Settings: local device only (UserDefaults). Update files: GitHub Releases (Microsoft)."],
-                ["Do you have a breach notification procedure?", "Yes — in the event of a breach affecting users, we will notify affected users and relevant supervisory authorities within 72 hours of becoming aware."],
-                ["Do you perform penetration testing?", "As an individual developer of a local-only desktop application, we rely on Apple's notarization process, App Sandbox, Hardened Runtime, and dependency audits rather than formal penetration testing."],
-                ["Is the application sandboxed?", "Yes. App Sandbox and Hardened Runtime are both enabled."],
-                ["Do you have a vulnerability disclosure policy?", "Yes — contact feedback@useaira.co. We aim to acknowledge within 48 hours."],
-                ["Do you use open source components?", "Yes — Sparkle (MIT-compatible). It is an auditable open-source project."],
-                ["Do you have a DPA available?", "No DPA is required as we collect and process no personal data on behalf of users."],
-                ["Do you comply with GDPR?", "Yes — the app is local-only and collects no personal data. See our Privacy Policy for full details."],
-                ["What personal data does the application process?", "None. User-created content and settings remain entirely on the local device and are not processed by us."],
+                [
+                  "Do you have a documented information security policy?",
+                  "Yes — reflected in our Privacy Policy and this Security page.",
+                ],
+                [
+                  "Do you encrypt data in transit?",
+                  "Yes — all network connections use HTTPS/TLS. Core app functionality requires no network access. The only connection made is for update checks via Sparkle over HTTPS.",
+                ],
+                [
+                  "Do you encrypt data at rest?",
+                  "User data is stored locally on the user's device using standard macOS storage. We hold no server-side data. The app relies on macOS platform protections rather than additional application-layer encryption.",
+                ],
+                [
+                  "Do you collect user data in the application?",
+                  "No. The Aira app collects zero personal data. All scripts and settings remain local to the device.",
+                ],
+                [
+                  "Do you use third-party analytics in the application?",
+                  "No. The app has no analytics, telemetry, or crash reporting.",
+                ],
+                [
+                  "Do you share or sell user data?",
+                  "No. We do not sell or share personal data with any third party.",
+                ],
+                [
+                  "Where is data stored?",
+                  "User scripts: local device only (~/Library/Application Support/Aira/). Settings: local device only (UserDefaults). Update files: GitHub Releases (Microsoft).",
+                ],
+                [
+                  "Do you have a breach notification procedure?",
+                  "Yes — in the event of a breach affecting users, we will notify affected users and relevant supervisory authorities within 72 hours of becoming aware.",
+                ],
+                [
+                  "Do you perform penetration testing?",
+                  "As an individual developer of a local-only desktop application, we rely on Apple's notarization process, App Sandbox, Hardened Runtime, and dependency audits rather than formal penetration testing.",
+                ],
+                [
+                  "Is the application sandboxed?",
+                  "Yes. App Sandbox and Hardened Runtime are both enabled.",
+                ],
+                [
+                  "Do you have a vulnerability disclosure policy?",
+                  "Yes — contact feedback@useaira.co. We aim to acknowledge within 48 hours.",
+                ],
+                [
+                  "Do you use open source components?",
+                  "Yes — Sparkle (MIT-compatible). It is an auditable open-source project.",
+                ],
+                [
+                  "Do you have a DPA available?",
+                  "No DPA is required as we collect and process no personal data on behalf of users.",
+                ],
+                [
+                  "Do you comply with GDPR?",
+                  "Yes — the app is local-only and collects no personal data. See our Privacy Policy for full details.",
+                ],
+                [
+                  "What personal data does the application process?",
+                  "None. User-created content and settings remain entirely on the local device and are not processed by us.",
+                ],
               ].map(([q, a]) => (
                 <tr key={q}>
                   <td>{q}</td>

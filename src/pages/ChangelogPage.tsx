@@ -1,5 +1,5 @@
-import { changelog, latestRelease } from "../content/release";
 import { LegalLayout } from "../components/LegalLayout";
+import { changelog, latestRelease } from "../content/release";
 
 const typeLabel: Record<string, string> = {
   added: "Added",
@@ -44,9 +44,11 @@ export function ChangelogPage() {
                   <time className="changelog-date">{entry.date}</time>
                 </div>
                 <ul className="changelog-changes">
-                  {entry.changes.map((change, i) => (
-                    <li key={i} className="changelog-change">
-                      <span className={`changelog-type ${typeColor[change.type]}`}>
+                  {entry.changes.map((change) => (
+                    <li key={change.description} className="changelog-change">
+                      <span
+                        className={`changelog-type ${typeColor[change.type]}`}
+                      >
                         {typeLabel[change.type]}
                       </span>
                       {change.description}
