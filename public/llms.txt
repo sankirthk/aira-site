@@ -1,0 +1,36 @@
+# Aira
+
+> A free native macOS teleprompter for presenters, podcasters, and video creators.
+
+Aira displays your script in a floating overlay near the camera so you can maintain eye contact with your audience while reading. The overlay is excluded from screen capture — remote participants on Zoom, Google Meet, or Teams never see it.
+
+## Key features
+
+- **Notch overlay**: sits at the very top of the screen, right in your natural line of sight near the camera. On notch Macs it tucks into the camera cutout. On older Macs it appears as a slim rectangle at the top edge.
+- **Pill windows**: slim floating overlays you can drag to any position on any connected display. Works alongside the notch overlay or as a standalone display.
+- **Voice-activated scrolling**: script position tracks the user's voice in real time using Apple's on-device speech recognition (SFSpeechRecognizer). No audio ever leaves the device.
+- **Hidden from screen sharing**: overlay windows are invisible to screen capture software using macOS stealth APIs (NSWindow.sharingType = .none). Works with Zoom, Google Meet, Microsoft Teams, QuickTime, and OBS.
+- **Script editor**: write directly in the app or import from PDF, DOCX, TXT, or Markdown. Add performance cues in square brackets like [PAUSE] or [SMILE].
+- **Local-first**: no account, no telemetry, no cloud. All scripts stored on device.
+- **Free**: no payment, no subscription.
+
+## System requirements
+
+- macOS 14.4 or later
+- Works on Intel and Apple Silicon (universal binary)
+- Works on any Mac — notch Macs and non-notch Macs
+
+## Download
+
+https://useaira.co/#download
+
+## Contact
+
+feedback@useaira.co
+
+## Pages
+
+- [Homepage](https://useaira.co/)
+- [Changelog](https://useaira.co/changelog)
+- [Privacy Policy](https://useaira.co/privacy)
+- [Security](https://useaira.co/security)
