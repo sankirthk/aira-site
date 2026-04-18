@@ -8,17 +8,17 @@ import { VoiceMicIcon } from "./VoiceMicIcon";
 const controlCards = [
   {
     title: "Menu Bar Controls",
-    body: "Launch, pause, and stop sessions without switching windows. The menu bar shortcut gives you instant access to everything mid-presentation.",
+    body: "Launch, pause, and stop without switching windows. Everything is one click away, even mid-presentation.",
     icon: MenuBarControlsIcon,
   },
   {
     title: "Keyboard Shortcuts",
-    body: "Set your own shortcuts for play, pause, speed, and swap. Control everything without touching your mouse.",
+    body: "Set your own shortcuts for play, pause, and speed. Run your entire session without touching the mouse.",
     icon: KeyboardShortcutsIcon,
   },
   {
     title: "Voice Activated",
-    body: "Text scrolls automatically when it detects your voice. A mic level indicator shows exactly what Aira is picking up, and background noise sensitivity is adjustable.",
+    body: "The script scrolls automatically when Aira detects your voice. A mic level indicator gives visual feedback so you can confirm the microphone is active and picking up sound. Background noise sensitivity is adjustable.",
     icon: VoiceMicIcon,
   },
   {
@@ -28,12 +28,12 @@ const controlCards = [
   },
   {
     title: "Countdown Timer",
-    body: "Set a countdown before your session begins so you have time to compose yourself before the script starts rolling.",
+    body: "Set a countdown before your session begins so you have a moment to settle before the script starts rolling.",
     icon: CountdownTimerIcon,
   },
   {
     title: "Appearance",
-    body: "Choose your font, text size, overlay color, text color, and opacity. Adjust per session if you want.",
+    body: "Choose your font, text size, overlay color, text color, and opacity. Adjust per session.",
     icon: AppearanceIcon,
   },
 ] as const;

@@ -6,10 +6,10 @@ const showcaseItems = [
   {
     eyebrow: "Always near the camera",
     title: "Notch Overlay",
-    body: "Your script floats just below the macOS camera, right in your natural line of sight. It scrolls as you speak and disappears completely from screen recordings and calls. Works on any Mac, whether the camera lives in a notch or not.",
+    body: "Your script sits at the very top of your screen, right in your natural line of sight as you look toward the camera. On notch Macs it tucks into the camera cutout. On older Macs it appears as a slim rectangle at the top edge. Either way it scrolls as you speak and disappears completely from screen recordings and calls.",
     bullets: [
-      "Hugs the camera closely",
-      "Auto-scrolls with your speech",
+      "Stays close to the camera on any Mac",
+      "Auto-scrolls with your voice",
       "Hidden from screen sharing",
       "Customize color, font, size, and opacity",
     ],
@@ -19,12 +19,12 @@ const showcaseItems = [
   {
     eyebrow: "Float anywhere on any display",
     title: "Pill Windows",
-    body: "Pill windows are independent floating overlays you can place anywhere on any screen. Run them in sync with the notch overlay, show different content altogether, or use them as your only display. Fully customizable and still invisible to screen capture.",
+    body: "Pill windows are slim floating overlays you can drag to any position on any connected screen. Run them alongside the notch overlay, show different script content, or use them as your only display. Fully customizable and invisible to screen capture, just like the notch overlay.",
     bullets: [
       "Works on any display, any Mac",
-      "Sync with notch or show separate content",
+      "Sync with the notch overlay or show separate content",
       "Resize and reposition freely",
-      "Same stealth behavior as the notch",
+      "Same stealth behavior as the notch overlay",
     ],
     tone: "terracotta",
     visual: "pill",
@@ -32,12 +32,12 @@ const showcaseItems = [
   {
     eyebrow: "Write, import, organize",
     title: "Script Editor",
-    body: "Write your scripts inside Aira, or bring them in from anywhere. Supports import from PDF, Word docs, plain text, and Markdown. Add performance cues in square brackets like [PAUSE] or [SMILE], and everything stays stored locally on your Mac.",
+    body: "Write directly inside Aira or import from PDF, Word, plain text, or Markdown. Add performance cues in square brackets like [PAUSE] or [SMILE] to guide your delivery. Everything is stored locally on your Mac — you own your files.",
     bullets: [
       "Import from PDF, DOCX, TXT, Markdown",
-      "Organize into collections",
+      "Organize scripts into collections",
       "Add cues like [PAUSE], [SMILE], [EMPHASIS]",
-      "Everything stored locally, you own the files",
+      "Local storage, no cloud sync",
     ],
     tone: "slate",
     visual: "editor",
@@ -49,10 +49,10 @@ export function ProductShowcase() {
     <section className="section showcase-section" id="features">
       <div className="shell">
         <header className="section-header">
-          <h2>One app, every setup</h2>
+          <h2>Built for every display, every Mac</h2>
           <p>
-            Aira adapts to however you present: on your built-in display, an
-            external monitor, or both at once.
+            Aira adapts to however you present: built-in display, external
+            monitor, or both at once.
           </p>
         </header>
       </div>

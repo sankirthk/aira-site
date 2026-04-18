@@ -5,19 +5,19 @@ const steps = [
     number: "01",
     title: "Download the DMG",
     description:
-      "Click download. The DMG saves to your Downloads folder and macOS handles verification automatically.",
+      "Click download. The file saves to your Downloads folder and macOS verifies it automatically.",
   },
   {
     number: "02",
     title: "Move to Applications",
     description:
-      "Open the DMG file and drag the Aira icon into Applications. You can eject the DMG afterward. This is standard macOS installation.",
+      "Open the DMG and drag Aira into Applications. Eject when done. Standard macOS installation.",
   },
   {
     number: "03",
     title: "Launch and grant access",
     description:
-      "Open Aira from Applications. macOS will ask for accessibility, microphone, and speech recognition permissions for voice activated scrolling. No account creation, no sign-up flow.",
+      "Open Aira from Applications. macOS will ask for accessibility, microphone, and speech recognition permissions — accessibility for global keyboard shortcuts, microphone and speech recognition for voice-activated scrolling. No account, no sign-up.",
   },
 ];
 
@@ -27,7 +27,7 @@ export function InstallationGuide() {
       <div className="shell install-shell">
         <header className="section-header section-header-light">
           <h2>Ready in 60 seconds</h2>
-          <p>Standard macOS installation. No tricks, no registration forms.</p>
+          <p>Standard macOS installation. No registration, no payment.</p>
         </header>
 
         <div className="install-list">

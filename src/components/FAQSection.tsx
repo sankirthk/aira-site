@@ -2,31 +2,31 @@ const faqs = [
   {
     question: "Does Aira work on both Intel and Apple Silicon Macs?",
     answer:
-      "Yes. Aira is a universal binary that runs natively on both Intel processors and Apple Silicon.",
+      "Yes. Aira is a universal binary that runs natively on both Intel and Apple Silicon.",
   },
   {
     question:
       "Will people see the teleprompter during video calls or recordings?",
     answer:
-      "No. Both notch and pill overlays are hidden from major screen capture and sharing software at the system level.",
+      "No. Both the notch overlay and pill windows are hidden from screen capture and sharing software at the system level.",
   },
   {
-    question: "Does it work on any Mac with a notch, not just MacBook Pro?",
+    question: "Does the notch overlay work on Macs without a camera cutout?",
     answer:
-      "Yes. Aira works on any Mac that has a notch. Pill Windows work on any display regardless.",
+      "Yes. Aira requires macOS 14.4 or later and works on any Mac regardless of whether it has a notch. On Macs without a camera cutout the overlay appears as a slim rectangle at the top of the screen, in the same position near the camera. Pill windows work on any display regardless.",
   },
   {
     question: "What permissions does Aira need?",
     answer:
-      "Aira requests three permissions: accessibility, microphone, and speech recognition. All three are used for voice activated scrolling. You can still use Aira manually without granting them.",
+      "Aira requests three permissions: accessibility, microphone, and speech recognition. Accessibility is required for global keyboard shortcuts to work across all apps. Microphone and speech recognition are required for voice-activated scrolling. If you skip any of them during setup you can grant them later in System Settings.",
   },
   {
     question: "Is my content uploaded anywhere?",
     answer:
-      "No. All scripts are stored locally on your Mac and speech recognition happens on-device.",
+      "No. All scripts are stored locally on your Mac and speech recognition happens entirely on-device.",
   },
   {
-    question: "Does voice activated scrolling require an internet connection?",
+    question: "Does voice-activated scrolling require an internet connection?",
     answer:
       "No. It uses Apple's on-device speech recognition and works completely offline.",
   },

@@ -64,7 +64,7 @@ const trustItems = [
       </svg>
     ),
     title: "No account",
-    description: "Download and use immediately",
+    description: "Download and open. That's it.",
   },
   {
     icon: (
@@ -85,7 +85,7 @@ const trustItems = [
       </svg>
     ),
     title: "No telemetry",
-    description: "Zero tracking or analytics",
+    description: "Zero tracking, zero analytics",
   },
 ];
 

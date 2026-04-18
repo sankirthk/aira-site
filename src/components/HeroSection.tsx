@@ -18,9 +18,8 @@ export function HeroSection() {
           </h1>
 
           <p className="hero-copy">
-            Aira is a Mac teleprompter that keeps your script right next to your
-            camera, so you stay locked in with your audience, not buried in
-            notes.
+            Aira is a Mac teleprompter that keeps your script just below your
+            camera, so you stay focused on your audience instead of your notes.
           </p>
 
           <div className="hero-actions">
