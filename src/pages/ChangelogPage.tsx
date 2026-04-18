@@ -63,37 +63,3 @@ export function ChangelogPage() {
     </LegalLayout>
   );
 }
-
-export const changelog = [
-  {
-    version: "1.0.0-beta.1",
-    date: "2026-04-18",
-    tag: "beta",
-    changes: [
-    {
-      type: "added",
-      description: "First public beta of Aira, a native macOS teleprompter built around a notch-first reading experience.",
-    },
-    {
-      type: "added",
-      description: "Voice-Sync teleprompting with on-device speech recognition and pause-on-silence behavior.",
-    },
-    {
-      type: "added",
-      description: "Manual scrolling with configurable pace, plus synced and fully manual pill overlay modes.",
-    },
-    {
-      type: "added",
-      description: "Stealth-oriented Notch and pill overlays designed to stay out of screen-share output during live sessions.",
-    },
-    {
-      type: "added",
-      description: "Built-in script editor and local-first document library with import, collections, starring, duplication, and bulk delete workflows.",
-    },
-    {
-      type: "added",
-      description: "Direct distribution through notarized DMG installs with Sparkle-based in-app update support for installed copies.",
-    }
-    ],
-  },
-];
