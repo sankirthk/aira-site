@@ -58,7 +58,7 @@ export function FAQSection() {
           <p>Still have questions?</p>
           <a
             className="button button-secondary"
-            href="mailto:feedback@aira.app"
+            href="mailto:feedback@useaira.co"
           >
             Send us an email
           </a>

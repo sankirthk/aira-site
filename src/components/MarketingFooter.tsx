@@ -10,7 +10,7 @@ export function MarketingFooter() {
           It&apos;s in active development. Found a bug, have an idea, or want to
           share how you use it? Every message gets read.
         </p>
-        <a href="mailto:feedback@aira.app">feedback@aira.app</a>
+        <a href="mailto:feedback@useaira.co">feedback@useaira.co</a>
       </div>
 
       <div className="shell footer-grid">

@@ -1,6 +1,16 @@
+import { useEffect, useRef } from "react";
 import { latestRelease } from "../content/release";
 
 export function HeroSection() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch(() => {});
+    }
+  }, []);
+
   return (
     <section className="hero section">
       <div className="shell hero-layout">
@@ -40,6 +50,7 @@ export function HeroSection() {
         <div className="hero-mockup" aria-hidden="true">
           <div className="hero-image-frame hero-image-frame-straight">
             <video
+              ref={videoRef}
               src="/Aira.mp4"
               className="hero-image"
               autoPlay
