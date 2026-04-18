@@ -1,4 +1,3 @@
-import heroMainImage from "../assets/CreamBackGround/Main/Main.png";
 import { latestRelease } from "../content/release";
 
 export function HeroSection() {
@@ -40,7 +39,14 @@ export function HeroSection() {
 
         <div className="hero-mockup" aria-hidden="true">
           <div className="hero-image-frame hero-image-frame-straight">
-            <img src={heroMainImage} alt="" className="hero-image" />
+            <video
+              src="/Aira.mp4"
+              className="hero-image"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
           </div>
         </div>
       </div>
