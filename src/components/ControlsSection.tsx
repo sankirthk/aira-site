@@ -1,7 +1,15 @@
+import { AccessibilityControlsIcon } from "./AccessibilityControlsIcon";
 import { AppearanceIcon } from "./AppearanceIcon";
+import { CollectionsIcon } from "./CollectionsIcon";
 import { CountdownTimerIcon } from "./CountdownTimerIcon";
 import { KeyboardShortcutsIcon } from "./KeyboardShortcutsIcon";
 import { MenuBarControlsIcon } from "./MenuBarControlsIcon";
+import { NotchUndockIcon } from "./NotchUndockIcon";
+import { OverlayPrivacyIcon } from "./OverlayPrivacyIcon";
+import { PauseOnHoverIcon } from "./PauseOnHoverIcon";
+import { PillFullscreenIcon } from "./PillFullscreenIcon";
+import { ScrollSpeedIcon } from "./ScrollSpeedIcon";
+import { SpokenWordHighlightIcon } from "./SpokenWordHighlightIcon";
 import { SwapOnFlyIcon } from "./SwapOnFlyIcon";
 import { VoiceMicIcon } from "./VoiceMicIcon";
 
@@ -23,7 +31,7 @@ const controlCards = [
   },
   {
     title: "Swap on the fly",
-    body: "Mid-session, right-click to switch between the notch overlay and pill window via the context menu. No need to stop and restart.",
+    body: "Swap script focus without restarting your session. Move between the notch and pill workflow while you stay on track.",
     icon: SwapOnFlyIcon,
   },
   {
@@ -35,6 +43,46 @@ const controlCards = [
     title: "Appearance",
     body: "Choose your font, text size, overlay color, text color, and opacity. Adjust per session.",
     icon: AppearanceIcon,
+  },
+  {
+    title: "Spoken-Word Highlighting",
+    body: "Follow each spoken phrase with visual emphasis on screen. It helps you keep your place without changing actual scroll speed.",
+    icon: SpokenWordHighlightIcon,
+  },
+  {
+    title: "Pause on Hover",
+    body: "Pause scrolling by hovering when you need to stop, think, or go off script. Leave it off if you want uninterrupted motion.",
+    icon: PauseOnHoverIcon,
+  },
+  {
+    title: "Overlay Privacy",
+    body: "Choose whether overlays stay hidden from screen sharing or remain visible for demos, recordings, and setup walkthroughs.",
+    icon: OverlayPrivacyIcon,
+  },
+  {
+    title: "Notch Undock",
+    body: "Break the notch overlay free when you need more flexibility. Move it, resize it, fullscreen it, then dock it back smoothly.",
+    icon: NotchUndockIcon,
+  },
+  {
+    title: "Pill Fullscreen",
+    body: "Expand pill overlays on the right display when your setup calls for it. Great for external monitors and side-by-side presenter rigs.",
+    icon: PillFullscreenIcon,
+  },
+  {
+    title: "Collections",
+    body: "Add scripts to collections from hover actions, drag and drop, or quick menus. Organize your session library the way you actually work.",
+    icon: CollectionsIcon,
+  },
+  {
+    title: "Accessibility Controls",
+    body: "Tune letter spacing, word spacing, line spacing, text shadow, and padding so long scripts stay comfortable to read.",
+    icon: AccessibilityControlsIcon,
+  },
+  {
+    title: "Stable Scroll Speed",
+    body: "Manual pacing now uses points per second, which gives you steadier physical motion and more predictable rehearsal speed.",
+    icon: ScrollSpeedIcon,
   },
 ] as const;
 

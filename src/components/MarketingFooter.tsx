@@ -1,6 +1,8 @@
 import { latestRelease } from "../content/release";
 import { Wordmark } from "./Wordmark";
 
+const githubPlaceholderUrl = "https://github.com/TODO/aira";
+
 export function MarketingFooter() {
   return (
     <footer className="footer">
@@ -8,9 +10,20 @@ export function MarketingFooter() {
         <h2>Help shape Aira</h2>
         <p>
           It&apos;s in active development. Found a bug, have an idea, or want to
-          share how you use it? Every message gets read.
+          share how you use it? Every message gets read. If you&apos;re enjoying
+          it, you can also star Aira on GitHub.
         </p>
-        <a href="mailto:feedback@useaira.co">feedback@useaira.co</a>
+        <div className="footer-support-links">
+          <a
+            href={githubPlaceholderUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Star Aira on GitHub"
+          >
+            Star on GitHub
+          </a>
+          <a href="mailto:feedback@useaira.co">feedback@useaira.co</a>
+        </div>
       </div>
 
       <div className="shell footer-grid">
