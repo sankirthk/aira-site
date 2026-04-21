@@ -34,15 +34,28 @@ export function ChangelogPage() {
           </div>
         ) : (
           <div className="changelog-list">
-            {changelog.map((entry) => (
-              <article className="changelog-entry" key={entry.version}>
-                <div className="changelog-header">
-                  <h2 className="changelog-version">v{entry.version}</h2>
-                  <span className={`changelog-tag changelog-tag-${entry.tag}`}>
-                    {entry.tag}
-                  </span>
-                  <time className="changelog-date">{entry.date}</time>
-                </div>
+            {changelog.map((entry, index) => (
+              <details
+                className="changelog-entry"
+                key={entry.version}
+                open={index === 0}
+              >
+                <summary className="changelog-header">
+                  <div className="changelog-header-main">
+                    <h2 className="changelog-version">v{entry.version}</h2>
+                    <span
+                      className={`changelog-tag changelog-tag-${entry.tag}`}
+                    >
+                      {entry.tag}
+                    </span>
+                  </div>
+                  <div className="changelog-header-meta">
+                    <time className="changelog-date">{entry.date}</time>
+                    <span className="changelog-chevron" aria-hidden="true">
+                      ▾
+                    </span>
+                  </div>
+                </summary>
                 <ul className="changelog-changes">
                   {entry.changes.map((change) => (
                     <li key={change.description} className="changelog-change">
@@ -55,7 +68,7 @@ export function ChangelogPage() {
                     </li>
                   ))}
                 </ul>
-              </article>
+              </details>
             ))}
           </div>
         )}
