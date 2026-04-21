@@ -21,27 +21,40 @@ export type ChangelogEntry = {
 };
 
 export const latestRelease: ReleaseMetadata = {
-  version: "1.0.0-beta.3",
-  tag: "v1.0.0-beta.3",
+  version: "1.0.0-beta.4",
+  tag: "v1.0.0-beta.4",
   releaseDate: "2026-04-21",
   betaLabel: "Public Beta",
   notarized: true,
   dmgUrl:
-    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.3/Aira-1.0.0-beta.3.dmg",
+    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.4/Aira-1.0.0-beta.4.dmg",
   releaseNotesUrl:
-    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.3",
+    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.4",
   distributionRepo: "sankirthk/aira-releases",
   summary: [
-    "**Collections are faster to manage.** Scripts can now be added to collections from a hover action, by dragging onto a collection in the sidebar, or from a script-card context menu.",
-    "**Settings are reorganized around real session flow.** Pill preferences now live in their own tab, Notch settings are more focused, and System settings are grouped into Before Your Session, During Your Session, Controls, and Privacy.",
-    "**Overlay readability is more configurable.** The Notch settings now include accessibility controls for letter spacing, line spacing, word spacing, text shadow, and inner text padding.",
-    "**Scrolling behavior is more stable and explicit.** Manual auto-scroll now uses points per second instead of WPM-style pacing, and spoken-word highlighting is available as a visual-only session aid.",
-    "**Overlay controls are now visible on hover.** The Notch and Pill overlays replace most context-menu actions with direct hover buttons for pause, close, docking, swapping, and fullscreen where supported.",
-    "**The Notch can now undock into a free-floating overlay.** When no Pill windows are active, the Notch overlay can detach from the camera area, move freely, resize, enter fullscreen, and dock back smoothly.",
+    "**A roomier updater prompt.** The Sparkle update dialog now uses a larger window size so the branded copy and actions fit more comfortably.",
+    "**Softer, more polished corners.** The updater prompt now uses a rounder card shape that better matches Aira's visual language.",
   ],
 };
 
 export const changelog = [
+  {
+    version: "1.0.0-beta.4",
+    date: "2026-04-21",
+    tag: "beta",
+    changes: [
+      {
+        type: "changed",
+        description:
+          "The direct-distribution updater prompt now uses a larger window size for a more comfortable layout.",
+      },
+      {
+        type: "changed",
+        description:
+          "The updater prompt card now uses more rounded corners and roomier internal spacing.",
+      },
+    ],
+  },
   {
     version: "1.0.0-beta.3",
     date: "2026-04-21",
