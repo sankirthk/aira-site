@@ -21,27 +21,103 @@ export type ChangelogEntry = {
 };
 
 export const latestRelease: ReleaseMetadata = {
-  version: "1.0.0-beta.1",
-  tag: "v1.0.0-beta.1",
-  releaseDate: "2026-04-18",
+  version: "1.0.0-beta.2",
+  tag: "v1.0.0-beta.2",
+  releaseDate: "2026-04-21",
   betaLabel: "Public Beta",
   notarized: true,
   dmgUrl:
-    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.1/Aira-1.0.0-beta.1.dmg",
+    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.2/Aira-1.0.0-beta.2.dmg",
   releaseNotesUrl:
-    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.1",
+    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.2",
   distributionRepo: "sankirthk/aira-releases",
   summary: [
-    "**Voice-Sync teleprompting.** Aira can follow your spoken words with on-device speech recognition and advance the script in real time.",
-    "**Manual scrolling is always available.** You can drive the script yourself at any time with a configurable manual pace.",
-    "**Stealth overlays for live sessions.** The Notch and pill overlays are designed to remain visible to you while staying out of screen-share output.",
-    "**Notch-first presentation.** The primary teleprompter window is anchored beneath the built-in MacBook camera area for direct-to-camera delivery.",
-    "**Optional pill overlays.** You can enable one or two additional floating pill windows and use them in synced or fully manual modes.",
-    "**Built-in script workflow.** Aira includes a local-first document library, script editor, import flow, collections, starring, duplication, and bulk selection tools.",
+    "**Collections are faster to manage.** Scripts can now be added to collections from a hover action, by dragging onto a collection in the sidebar, or from a script-card context menu.",
+    "**Settings are reorganized around real session flow.** Pill preferences now live in their own tab, Notch settings are more focused, and System settings are grouped into Before Your Session, During Your Session, Controls, and Privacy.",
+    "**Overlay readability is more configurable.** The Notch settings now include accessibility controls for letter spacing, line spacing, word spacing, text shadow, and inner text padding.",
+    "**Scrolling behavior is more stable and explicit.** Manual auto-scroll now uses points per second instead of WPM-style pacing, and spoken-word highlighting is available as a visual-only session aid.",
+    "**Overlay controls are now visible on hover.** The Notch and Pill overlays replace most context-menu actions with direct hover buttons for pause, close, docking, swapping, and fullscreen where supported.",
+    "**The Notch can now undock into a free-floating overlay.** When no Pill windows are active, the Notch overlay can detach from the camera area, move freely, resize, enter fullscreen, and dock back smoothly.",
   ],
 };
 
 export const changelog = [
+  {
+    version: "1.0.0-beta.2",
+    date: "2026-04-21",
+    tag: "beta",
+    changes: [
+      {
+        type: "added",
+        description:
+          "A new collection-management flow from script-card hover actions, including a modal that supports multi-collection assignment and inline collection creation.",
+      },
+      {
+        type: "added",
+        description:
+          "Drag-and-drop for adding script cards directly to collections from the library grid.",
+      },
+      {
+        type: "added",
+        description:
+          "Script-card context-menu actions for starring, duplicating, adding to collections, and deleting.",
+      },
+      {
+        type: "added",
+        description:
+          "Accessibility controls in Notch settings for letter spacing, line spacing, word spacing, text shadow, and text padding.",
+      },
+      {
+        type: "added",
+        description:
+          "Spoken-word highlighting as an optional visual-only session aid.",
+      },
+      {
+        type: "added",
+        description:
+          "Notch undock, move, resize, fullscreen, and smooth dock-back behavior when no Pill overlays are active.",
+      },
+      {
+        type: "changed",
+        description:
+          "Preferences now separate Pill settings into their own tab and reorganize System settings into Before Your Session, During Your Session, Controls, and Privacy.",
+      },
+      {
+        type: "changed",
+        description:
+          "Manual auto-scroll pacing now uses points-per-second values instead of WPM-style speed math for more stable motion.",
+      },
+      {
+        type: "changed",
+        description:
+          "Overlay interactions now use hover-button controls in place of most overlay context-menu actions.",
+      },
+      {
+        type: "changed",
+        description:
+          "Overlay privacy is now user-configurable, with screen-share hiding still enabled by default.",
+      },
+      {
+        type: "changed",
+        description:
+          "The menu bar icon now adapts between light and dark appearances.",
+      },
+      {
+        type: "removed",
+        description: "Mood presets from Notch settings.",
+      },
+      {
+        type: "fixed",
+        description:
+          "The Scripts view no longer blank out after a presenter session or require a tab switch to reappear.",
+      },
+      {
+        type: "fixed",
+        description:
+          "The menu bar quick-access window is now easier to dismiss by clicking anywhere outside it.",
+      },
+    ],
+  },
   {
     version: "1.0.0-beta.1",
     date: "2026-04-18",
