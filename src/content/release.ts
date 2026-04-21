@@ -21,23 +21,57 @@ export type ChangelogEntry = {
 };
 
 export const latestRelease: ReleaseMetadata = {
-  version: "1.0.0-beta.4",
-  tag: "v1.0.0-beta.4",
+  version: "1.0.0-beta.5",
+  tag: "v1.0.0-beta.5",
   releaseDate: "2026-04-21",
   betaLabel: "Public Beta",
   notarized: true,
   dmgUrl:
-    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.4/Aira-1.0.0-beta.4.dmg",
+    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.5/Aira-1.0.0-beta.5.dmg",
   releaseNotesUrl:
-    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.4",
+    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.5",
   distributionRepo: "sankirthk/aira-releases",
   summary: [
-    "**A roomier updater prompt.** The Sparkle update dialog now uses a larger window size so the branded copy and actions fit more comfortably.",
-    "**Softer, more polished corners.** The updater prompt now uses a rounder card shape that better matches Aira's visual language.",
+    "**System is now Session.** The settings area is labeled more clearly around how the app is actually used.",
+    "**The font row is easier to use.** Clicking anywhere on the overlay font row now opens the dropdown instead of requiring a precise click on the smaller control.",
+    "**The Notch preview is more faithful.** Preview sizing now better reflects the real overlay instead of exaggerating the notch cutout or vertical sizing.",
+    "**Overlay controls are now bounded to realistic values.** Width, height, and font size are clamped into tighter ranges so the settings do not drift into impractical extremes.",
   ],
 };
 
 export const changelog = [
+  {
+    version: "1.0.0-beta.5",
+    date: "2026-04-21",
+    tag: "beta",
+    changes: [
+      {
+        type: "changed",
+        description:
+          "The **System** settings section is now labeled **Session**.",
+      },
+      {
+        type: "changed",
+        description:
+          "Clicking anywhere on the overlay font row now opens the font dropdown.",
+      },
+      {
+        type: "changed",
+        description:
+          "The Notch preview now more closely matches the real overlay layout and proportions.",
+      },
+      {
+        type: "changed",
+        description:
+          "Notch width, notch height, and overlay font size now use tighter, more realistic bounds.",
+      },
+      {
+        type: "fixed",
+        description:
+          "Launch-time permission handling was refined to reduce repeated accessibility, microphone, and speech-recognition prompts.",
+      },
+    ],
+  },
   {
     version: "1.0.0-beta.4",
     date: "2026-04-21",
