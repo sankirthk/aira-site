@@ -1,7 +1,7 @@
 import { latestRelease } from "../content/release";
 import { Wordmark } from "./Wordmark";
 
-const githubPlaceholderUrl = "https://github.com/TODO/aira";
+const githubPlaceholderUrl = "https://github.com/sankirthk/AiraPublic";
 
 export function MarketingFooter() {
   return (
