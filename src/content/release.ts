@@ -21,25 +21,116 @@ export type ChangelogEntry = {
 };
 
 export const latestRelease: ReleaseMetadata = {
-  version: "1.0.0-beta.5",
-  tag: "v1.0.0-beta.5",
-  releaseDate: "2026-04-21",
+  version: "1.0.0-beta.6",
+  tag: "v1.0.0-beta.6",
+  releaseDate: "2026-05-07",
   betaLabel: "Public Beta",
   notarized: true,
   dmgUrl:
-    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.5/Aira-1.0.0-beta.5.dmg",
+    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.6/Aira-1.0.0-beta.6.dmg",
   releaseNotesUrl:
-    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.5",
+    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.6",
   distributionRepo: "sankirthk/aira-releases",
   summary: [
-    "**System is now Session.** The settings area is labeled more clearly around how the app is actually used.",
-    "**The font row is easier to use.** Clicking anywhere on the overlay font row now opens the dropdown instead of requiring a precise click on the smaller control.",
-    "**The Notch preview is more faithful.** Preview sizing now better reflects the real overlay instead of exaggerating the notch cutout or vertical sizing.",
-    "**Overlay controls are now bounded to realistic values.** Width, height, and font size are clamped into tighter ranges so the settings do not drift into impractical extremes.",
+    "**Offline Word Matching Sync.** Aira now uses bundled WhisperKit models for word-based script tracking, with no runtime model download and no cloud speech processing.",
+    "**Launch-time Pill Window setup.** Pill Windows are now chosen when you cast, instead of forcing users to preconfigure every session from Preferences.",
+    "**Per-Pill Window customization.** Each Pill Window can have its own appearance and readability settings while still inheriting sensible Notch defaults when untouched.",
+    "**Faster, more resilient word highlighting.** Highlighting now locks onto the starting words more quickly and can recover from skipped lines when the next visible phrase is spoken.",
+    "**Real microphone mute.** The microphone button now mutes and resumes audio capture instead of only pausing scroll movement.",
+    "**Cleaner session recovery.** Escape handling, fullscreen passthrough, and manager-window traffic-light restoration are fixed after presenter sessions.",
+    "**More realistic scroll speeds.** Classic scroll speed now uses a tighter 10-30 points-per-second range with a default of 10.",
+    "**Better hit targets.** Split buttons, reset buttons, dropdown rows, and color swatches now respond across the whole visible control instead of only the centered text or tiny picker area.",
+    "**Optional script progress.** Presenter overlays can show script progress so users can see where they are in the script at a glance.",
   ],
 };
 
 export const changelog = [
+  {
+    version: "1.0.0-beta.6",
+    date: "2026-05-07",
+    tag: "beta",
+    changes: [
+      {
+        type: "added",
+        description:
+          "Offline Word Matching Sync powered by bundled WhisperKit models.",
+      },
+      {
+        type: "added",
+        description:
+          "Launch-time Pill Window setup from Script Editor and script overview chevrons.",
+      },
+      {
+        type: "added",
+        description:
+          "Per-Pill Window appearance and readability customization.",
+      },
+      {
+        type: "added",
+        description: "Optional presenter script progress indicator.",
+      },
+      {
+        type: "changed",
+        description:
+          "Pill Window content is now selected at launch time instead of being preconfigured in Preferences.",
+      },
+      {
+        type: "changed",
+        description:
+          "Classic scroll speed now uses a 10-30 points-per-second range with a default of 10.",
+      },
+      {
+        type: "changed",
+        description:
+          "Microphone controls now mute and resume audio capture instead of only pausing scroll movement.",
+      },
+      {
+        type: "changed",
+        description:
+          "Word highlighting now starts faster and can recover from skipped visible lines after a 2+ word phrase match.",
+      },
+      {
+        type: "changed",
+        description:
+          "Split buttons, reset buttons, dropdown rows, and color swatches now use full visible-area hit targets.",
+      },
+      {
+        type: "fixed",
+        description:
+          "Empty or whitespace-only scripts can no longer launch empty presenter sessions.",
+      },
+      {
+        type: "fixed",
+        description:
+          "Escape handling works correctly with fullscreen while still ending presenter sessions.",
+      },
+      {
+        type: "fixed",
+        description:
+          "Manager-window traffic lights are restored after presenter sessions end.",
+      },
+      {
+        type: "fixed",
+        description:
+          "Menu bar quick-access launches stay visible and respect the selected voice mode.",
+      },
+      {
+        type: "fixed",
+        description:
+          "Manual Pill Windows no longer respond to shared Notch scroll shortcuts.",
+      },
+      {
+        type: "fixed",
+        description:
+          "Script highlights are scoped to the active script so swapped overlays do not show stale highlights.",
+      },
+      {
+        type: "fixed",
+        description:
+          "Sandbox-compatible log export now uses non-blocking save-panel presentation.",
+      },
+    ],
+  },
   {
     version: "1.0.0-beta.5",
     date: "2026-04-21",
