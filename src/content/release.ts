@@ -21,30 +21,46 @@ export type ChangelogEntry = {
 };
 
 export const latestRelease: ReleaseMetadata = {
-  version: "1.0.0-beta.6",
-  tag: "v1.0.0-beta.6",
+  version: "1.0.0-beta.7",
+  tag: "v1.0.0-beta.7",
   releaseDate: "2026-05-07",
   betaLabel: "Public Beta",
   notarized: true,
   dmgUrl:
-    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.6/Aira-1.0.0-beta.6.dmg",
+    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.7/Aira-1.0.0-beta.7.dmg",
   releaseNotesUrl:
-    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.6",
+    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.7",
   distributionRepo: "sankirthk/aira-releases",
   summary: [
-    "**Offline Word Matching Sync.** Aira now uses bundled WhisperKit models for word-based script tracking, with no runtime model download and no cloud speech processing.",
-    "**Launch-time Pill Window setup.** Pill Windows are now chosen when you cast, instead of forcing users to preconfigure every session from Preferences.",
-    "**Per-Pill Window customization.** Each Pill Window can have its own appearance and readability settings while still inheriting sensible Notch defaults when untouched.",
-    "**Faster, more resilient word highlighting.** Highlighting now locks onto the starting words more quickly and can recover from skipped lines when the next visible phrase is spoken.",
-    "**Real microphone mute.** The microphone button now mutes and resumes audio capture instead of only pausing scroll movement.",
-    "**Cleaner session recovery.** Escape handling, fullscreen passthrough, and manager-window traffic-light restoration are fixed after presenter sessions.",
-    "**More realistic scroll speeds.** Classic scroll speed now uses a tighter 10-30 points-per-second range with a default of 10.",
-    "**Better hit targets.** Split buttons, reset buttons, dropdown rows, and color swatches now respond across the whole visible control instead of only the centered text or tiny picker area.",
-    "**Optional script progress.** Presenter overlays can show script progress so users can see where they are in the script at a glance.",
+    "**Script progress indicator is now included.** Active Notch and Pill overlays can show a thin bottom-edge progress line during presenter sessions.",
+    "**Persisted System setting.** `Show script progress` is available in System > During Session and defaults off.",
+    "**Live session updates.** Toggling the setting updates active overlay windows without requiring a new session.",
+    "**No scroll behavior changes.** The indicator is visual only; it does not add a separate lane, intercept pointer input, or alter scroll math.",
   ],
 };
 
 export const changelog = [
+  {
+    version: "1.0.0-beta.7",
+    date: "2026-05-07",
+    tag: "beta",
+    changes: [
+      {
+        type: "added",
+        description: "Optional presenter script progress indicator.",
+      },
+      {
+        type: "added",
+        description:
+          "System > During Session toggle for showing script progress.",
+      },
+      {
+        type: "fixed",
+        description:
+          "Beta release now includes the progress indicator feature that was previously documented but missing from the shipped DMG.",
+      },
+    ],
+  },
   {
     version: "1.0.0-beta.6",
     date: "2026-05-07",
