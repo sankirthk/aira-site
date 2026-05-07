@@ -1,6 +1,6 @@
-import whatTheySeeImage from "../../../assets/V1/Comparison/WhatTheySee.png";
-import whatYouSeeAiraImage from "../../../assets/V1/Comparison/WhatYouSeeAira.png";
-import whatYouSeeMainImage from "../../../assets/V1/Comparison/WhatYouSeeMain.png";
+import whatTheySeeImage from "../assets/Comparison/WhatTheySee.png";
+import whatYouSeeAiraImage from "../assets/Comparison/WhatYouSeeAira.png";
+import whatYouSeeMainImage from "../assets/Comparison/WhatYouSeeMain.png";
 
 const comparisonColumns = [
   {

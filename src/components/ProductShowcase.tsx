@@ -1,6 +1,6 @@
-import notchLeftTilt from "../../../assets/V2/Pictures/NotchLeftTilt.png";
-import pillRightTilt from "../../../assets/V2/Pictures/PillWindowsRightTilt.png";
-import editorLeft from "../../../assets/V2/Pictures/ScriptEditorLeftTilt.png";
+import notchLeftTilt from "../assets/ProductShowcase/NotchLeftTilt.png";
+import pillRightTilt from "../assets/ProductShowcase/PillWindowsRightTilt.png";
+import editorLeft from "../assets/ProductShowcase/ScriptEditorLeftTilt.png";
 
 const showcaseItems = [
   {

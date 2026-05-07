@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import heroVideo from "../../../assets/V2/Videos/Aira.mp4";
+import heroVideo from "../assets/Hero/Aira.mp4";
 import { latestRelease } from "../content/release";
 
 export function HeroSection() {
