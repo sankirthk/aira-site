@@ -103,10 +103,7 @@ svg {
   border-radius: 999px;
   padding: 15px 28px;
   border: 2px solid transparent;
-  transition:
-    transform 160ms ease,
-    box-shadow 160ms ease,
-    background 160ms ease,
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease,
     border-color 160ms ease;
 }
 
@@ -353,10 +350,7 @@ svg {
   background: rgba(132, 150, 136, 0.12);
   border: 1px solid rgba(132, 150, 136, 0.22);
   color: var(--color-primary);
-  transition:
-    background 180ms ease,
-    border-color 180ms ease,
-    color 180ms ease;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
 .trust-card:hover .trust-icon,
@@ -735,9 +729,7 @@ svg {
   border: 0;
   box-shadow: none;
   overflow: visible;
-  transition:
-    transform 220ms ease,
-    box-shadow 220ms ease;
+  transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
 .showcase-item:hover .visual-stack-card,
@@ -1145,10 +1137,8 @@ svg {
   background: rgba(245, 242, 236, 0.06);
   color: var(--color-background);
   text-decoration: none;
-  transition:
-    background 180ms ease,
-    border-color 180ms ease,
-    transform 180ms ease;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms
+    ease;
 }
 
 .footer-support-links a:hover {
