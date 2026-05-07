@@ -297,7 +297,7 @@ svg {
 .hero-image {
   display: block;
   width: calc(100% + 4px);
-  transform: translateX(-10px);
+  transform: translateX(-12px);
   border-radius: 0;
   box-shadow: none;
 }
@@ -1371,6 +1371,11 @@ svg {
 
   .hero-image-frame {
     width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+    transform: none;
   }
 
   .install-section .section-header {
