@@ -32,7 +32,15 @@ export function ClassicScrollIcon({
         stroke="#2B2B2B"
         strokeWidth="2"
       />
-      <rect x="14" y="12" width="14" height="4" rx="2" fill={color} opacity="0.22" />
+      <rect
+        x="14"
+        y="12"
+        width="14"
+        height="4"
+        rx="2"
+        fill={color}
+        opacity="0.22"
+      />
       <path
         d="M 14,20 H 28"
         stroke="#2B2B2B"

@@ -4,14 +4,12 @@ const steps = [
   {
     number: "01",
     title: "Download",
-    description:
-      "Get the DMG and open it from your Downloads folder.",
+    description: "Get the DMG and open it from your Downloads folder.",
   },
   {
     number: "02",
     title: "Install",
-    description:
-      "Drag Aira into Applications.",
+    description: "Drag Aira into Applications.",
   },
   {
     number: "03",
