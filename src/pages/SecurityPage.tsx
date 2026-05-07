@@ -5,7 +5,7 @@ export function SecurityPage() {
     <LegalLayout>
       <div className="legal-content">
         <h1>Security</h1>
-        <p className="legal-meta">Last updated: April 16, 2026</p>
+        <p className="legal-meta">Last updated: May 7, 2026</p>
 
         <p>
           Security and privacy are foundational to how Aira is built. This page
@@ -24,11 +24,11 @@ export function SecurityPage() {
               any kind.
             </li>
             <li>
-              Voice processing runs entirely on-device using Apple's on-device
-              speech recognition (
-              <code>requiresOnDeviceRecognition = true</code>). Microphone audio
-              is handled in real-time memory only and is never written to disk
-              or transmitted anywhere.
+              Voice processing runs entirely on-device. Word Matching Sync uses
+              bundled WhisperKit models with runtime downloads disabled. Aira's
+              Apple speech-recognition path is also configured for on-device
+              recognition. Microphone audio is handled in real-time memory only
+              and is never transmitted anywhere.
             </li>
             <li>
               Aira is code-signed with an Apple Developer ID and notarized by
@@ -41,8 +41,9 @@ export function SecurityPage() {
               ability of malicious code to tamper with the app process.
             </li>
             <li>
-              The only outbound network request the app makes is to check for
-              available updates, sent over HTTPS.
+              Core app features require no network connection. Direct
+              distribution builds use outbound HTTPS only for Sparkle update
+              checks and signed update downloads.
             </li>
           </ul>
         </section>
@@ -120,8 +121,9 @@ export function SecurityPage() {
               <tr>
                 <td>Microphone</td>
                 <td>
-                  Detects your voice to automatically scroll the teleprompter as
-                  you speak
+                  Captures live session audio for sound activated scrolling,
+                  Word Matching Sync, and word highlighting. Audio is processed
+                  on-device and is not uploaded.
                 </td>
               </tr>
               <tr>
@@ -134,8 +136,8 @@ export function SecurityPage() {
               <tr>
                 <td>Speech Recognition</td>
                 <td>
-                  Used for on-device voice detection via Apple's speech
-                  framework
+                  Supports Aira's Apple on-device speech-recognition path for
+                  speech-aware features.
                 </td>
               </tr>
             </tbody>
@@ -154,6 +156,17 @@ export function SecurityPage() {
                 rel="noreferrer"
               >
                 github.com/sparkle-project/Sparkle
+              </a>
+            </li>
+            <li>
+              <strong>WhisperKit</strong> (offline speech recognition for Word
+              Matching Sync) — MIT license, source at{" "}
+              <a
+                href="https://github.com/argmaxinc/whisperkit"
+                target="_blank"
+                rel="noreferrer"
+              >
+                github.com/argmaxinc/whisperkit
               </a>
             </li>
           </ul>
@@ -191,7 +204,7 @@ export function SecurityPage() {
                 ],
                 [
                   "Do you encrypt data in transit?",
-                  "Yes — all network connections use HTTPS/TLS. Core app functionality requires no network access. The only connection made is for update checks via Sparkle over HTTPS.",
+                  "Yes — all network connections use HTTPS/TLS. Core app functionality requires no network access. Direct distribution builds use Sparkle over HTTPS for update checks and signed update downloads.",
                 ],
                 [
                   "Do you encrypt data at rest?",
@@ -215,7 +228,7 @@ export function SecurityPage() {
                 ],
                 [
                   "Do you have a breach notification procedure?",
-                  "Yes — in the event of a breach affecting users, we will notify affected users and relevant supervisory authorities within 72 hours of becoming aware.",
+                  "Yes — if a security issue affects users, we will publish a notice on the website and release an update as quickly as possible. Because Aira has no accounts or email collection, direct user notification may not be available.",
                 ],
                 [
                   "Do you perform penetration testing?",
@@ -231,7 +244,7 @@ export function SecurityPage() {
                 ],
                 [
                   "Do you use open source components?",
-                  "Yes — Sparkle (MIT-compatible). It is an auditable open-source project.",
+                  "Yes — Sparkle for direct-distribution updates and WhisperKit for offline Word Matching Sync. Both are auditable open-source projects.",
                 ],
                 [
                   "Do you have a DPA available?",

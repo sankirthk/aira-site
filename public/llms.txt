@@ -8,7 +8,8 @@ Aira displays your script in a floating overlay near the camera so you can maint
 
 - **Notch overlay**: sits at the very top of the screen, right in your natural line of sight near the camera. On notch Macs it tucks into the camera cutout. On older Macs it appears as a slim rectangle at the top edge.
 - **Pill windows**: slim floating overlays you can drag to any position on any connected display. Works alongside the notch overlay or as a standalone display.
-- **Voice-activated scrolling**: script position tracks the user's voice in real time using Apple's on-device speech recognition (SFSpeechRecognizer). No audio ever leaves the device.
+- **Word Matching Sync**: script position follows matched spoken words using bundled WhisperKit models offline. Runtime model downloads are disabled and no audio leaves the device.
+- **Sound activated scrolling**: script motion responds to local microphone levels during an active session without sending audio anywhere.
 - **Hidden from screen sharing**: overlay windows are invisible to screen capture software using macOS stealth APIs (NSWindow.sharingType = .none). Works with Zoom, Google Meet, Microsoft Teams, QuickTime, and OBS.
 - **Script editor**: write directly in the app or import from PDF, DOCX, TXT, or Markdown. Add performance cues in square brackets like [PAUSE] or [SMILE].
 - **Local-first**: no account, no telemetry, no cloud. All scripts stored on device.

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import heroVideo from "../../../assets/V2/Videos/Aira.mp4";
 import { latestRelease } from "../content/release";
 
 export function HeroSection() {
@@ -21,14 +22,15 @@ export function HeroSection() {
           </div>
 
           <h1 className="hero-title">
-            Read naturally.
+            Stay on script.
             <br />
-            <span>Look natural.</span>
+            <span>Look more natural on camera.</span>
           </h1>
 
           <p className="hero-copy">
-            Aira is a Mac teleprompter that keeps your script just below your
-            camera, so you stay focused on your audience instead of your notes.
+            Aira places your script directly below the camera, making it easier
+            to maintain eye contact and deliver your message smoothly across
+            video calls, screen sharing, and screen recordings.
           </p>
 
           <div className="hero-actions">
@@ -38,7 +40,7 @@ export function HeroSection() {
               download
             >
               <DownloadIcon />
-              Download
+              Download for macOS
             </a>
           </div>
 
@@ -51,7 +53,7 @@ export function HeroSection() {
           <div className="hero-image-frame hero-image-frame-straight">
             <video
               ref={videoRef}
-              src="/Aira.mp4"
+              src={heroVideo}
               className="hero-image"
               autoPlay
               muted

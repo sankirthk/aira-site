@@ -23,7 +23,7 @@ const trustItems = [
       </svg>
     ),
     title: "On-device speech recognition",
-    description: "Your voice never leaves your Mac",
+    description: "Your voice never leaves your Mac.",
   },
   {
     icon: (
@@ -44,7 +44,7 @@ const trustItems = [
       </svg>
     ),
     title: "Hidden from screen sharing",
-    description: "Invisible to Zoom, Meet, and recordings",
+    description: "Your script stays out of view while presenting.",
   },
   {
     icon: (
@@ -63,7 +63,7 @@ const trustItems = [
         <line x1="4" y1="4" x2="20" y2="20" strokeWidth="2.5" />
       </svg>
     ),
-    title: "No account",
+    title: "No account required",
     description: "Download and open. That's it.",
   },
   {
@@ -85,98 +85,27 @@ const trustItems = [
       </svg>
     ),
     title: "No telemetry",
-    description: "Zero tracking, zero analytics",
+    description: "Zero tracking, zero analytics.",
   },
-];
+] as const;
 
 export function TrustStrip() {
   return (
-    <section
-      style={{
-        padding: "64px 24px",
-        background:
-          "linear-gradient(to bottom, #F5F2EC, rgba(132, 150, 136, 0.05))",
-      }}
-    >
-      <div
-        aria-hidden="true"
-        style={{
-          margin: "0 -24px 48px",
-          height: "48px",
-          overflow: "hidden",
-        }}
-      >
-        <svg
-          viewBox="0 0 1200 50"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          focusable="false"
-          style={{
-            display: "block",
-            width: "100%",
-            height: "100%",
-            opacity: 0.15,
-          }}
-        >
-          <path
-            d="M 0,25 Q 150,15 300,25 T 600,25 T 900,25 T 1200,25 L 1200,50 L 0,50 Z"
-            fill="#849688"
-          />
-        </svg>
-      </div>
-      <div
-        style={{
-          maxWidth: "1152px",
-          margin: "0 auto",
-        }}
-      >
+    <section className="section trust-strip">
+      <div className="shell">
+        <header className="section-header trust-header">
+          <h2>Private by design</h2>
+        </header>
+
         <div className="trust-grid">
           {trustItems.map((item) => (
-            <div
-              key={item.title}
-              style={{
-                textAlign: "center",
-              }}
-            >
-              <div
-                aria-hidden="true"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: "64px",
-                  height: "64px",
-                  marginBottom: "16px",
-                  borderRadius: "16px",
-                  background: "rgba(132, 150, 136, 0.1)",
-                  color: "#849688",
-                  transition: "all 0.3s ease",
-                }}
-              >
+            <article key={item.title} className="trust-card">
+              <div className="trust-icon" aria-hidden="true">
                 {item.icon}
               </div>
-              <h3
-                style={{
-                  margin: "0 0 8px",
-                  color: "#2B2B2B",
-                  fontFamily: "'Indie Flower', cursive",
-                  fontWeight: 500,
-                  fontSize: "18px",
-                }}
-              >
-                {item.title}
-              </h3>
-              <p
-                style={{
-                  margin: 0,
-                  color: "rgba(43,43,43,0.6)",
-                  fontFamily: "'Crimson Text', serif",
-                  fontSize: "14px",
-                }}
-              >
-                {item.description}
-              </p>
-            </div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
           ))}
         </div>
       </div>

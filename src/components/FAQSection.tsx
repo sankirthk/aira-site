@@ -1,3 +1,8 @@
+const bugReportUrl =
+  "https://github.com/sankirthk/AiraPublic/blob/main/docs/report-a-bug.md";
+const featureRequestUrl =
+  "https://github.com/sankirthk/AiraPublic/blob/main/docs/request-a-feature.md";
+
 const faqs = [
   {
     question: "Does Aira work on both Intel and Apple Silicon Macs?",
@@ -18,7 +23,7 @@ const faqs = [
   {
     question: "What permissions does Aira need?",
     answer:
-      "Aira requests three permissions: accessibility, microphone, and speech recognition. Accessibility is required for global keyboard shortcuts to work across all apps. Microphone and speech recognition are required for voice-activated scrolling. If you skip any of them during setup you can grant them later in System Settings.",
+      "Aira requests accessibility, microphone, and speech recognition permissions. Accessibility lets global keyboard shortcuts work across apps. Microphone access is used only during live sessions for sound activated scrolling, Word Matching Sync, and word highlighting. Speech Recognition supports Aira's Apple on-device recognition path for speech-aware features. If you skip a permission during setup, you can grant it later in System Settings.",
   },
   {
     question: "Is my content uploaded anywhere?",
@@ -26,9 +31,35 @@ const faqs = [
       "No. All scripts are stored locally on your Mac and speech recognition happens entirely on-device.",
   },
   {
-    question: "Does voice-activated scrolling require an internet connection?",
+    question:
+      "Do Word Matching Sync and sound activated scrolling require an internet connection?",
     answer:
-      "No. It uses Apple's on-device speech recognition and works completely offline.",
+      "No. Word Matching Sync uses bundled WhisperKit models offline, and sound activated scrolling uses local microphone level detection. Core presenter features work without an internet connection.",
+  },
+  {
+    question: "How does Word Matching Sync work?",
+    answer:
+      "Word Matching Sync listens during an active presenter session, transcribes short audio windows with bundled WhisperKit models, and matches the recognized words against your script so the playhead can follow your actual spoken position. The models ship inside Aira, runtime downloads are disabled, and audio is not sent to a server.",
+  },
+  {
+    question: "Is Aira free forever?",
+    answer:
+      "Yes. Aira is free forever. No subscription, no trial, and no account required.",
+  },
+  {
+    question: "Can I use Aira on an external display?",
+    answer:
+      "Yes. Pill Windows work across connected displays, and Aira supports different presentation setups.",
+  },
+  {
+    question: "What if I run into an issue?",
+    answer:
+      "You can report bugs or get help through the public GitHub bug report page.",
+  },
+  {
+    question: "Can I request a feature?",
+    answer:
+      "Yes. Feature requests and feedback are welcome on the public GitHub feature request page.",
   },
 ];
 
@@ -56,12 +87,24 @@ export function FAQSection() {
 
         <div className="faq-help">
           <p>Still have questions?</p>
-          <a
-            className="button button-secondary"
-            href="mailto:feedback@useaira.co"
-          >
-            Send us an email
-          </a>
+          <div className="faq-help-links">
+            <a
+              className="button button-secondary"
+              href={bugReportUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Report a bug
+            </a>
+            <a
+              className="button button-secondary"
+              href={featureRequestUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Request a feature
+            </a>
+          </div>
         </div>
       </div>
     </section>

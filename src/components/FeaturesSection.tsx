@@ -1,21 +1,33 @@
 const features = [
   {
-    title: "Voice Activated",
+    title: "Word Matching Sync",
     description:
-      "Aira listens to your speech on-device and automatically scrolls to keep pace with you. Pause and it waits. Speed up and it follows. No internet required.",
+      "Aira can follow the words you are actually saying and keep the script synced to your delivery. Skip ahead, recover from a new visible line, and keep moving without needing to touch the overlay.",
     colorClass: "sage",
     benefits: [
-      "Follows your natural speaking rhythm",
-      "Works completely offline",
-      "Adjustable sensitivity",
-      "Instant response, no lag",
+      "Matches spoken words to the script",
+      "Recovers when you skip ahead",
+      "Works on-device",
+      "Keeps synced Pill Windows aligned",
+    ],
+  },
+  {
+    title: "Sound Activated Scroll",
+    description:
+      "For a lighter hands-free mode, Aira can scroll when it hears you speaking and pause when the room goes quiet, with adjustable microphone sensitivity.",
+    colorClass: "terracotta",
+    benefits: [
+      "Starts and pauses from speech activity",
+      "Adjustable mic sensitivity",
+      "No manual pacing required",
+      "Useful for looser scripts",
     ],
   },
   {
     title: "Stealth Mode",
     description:
       "The overlay is hidden from screen recording and sharing software. Your viewers only see you, naturally engaged.",
-    colorClass: "terracotta",
+    colorClass: "slate",
     benefits: [
       "Invisible to all screen capture",
       "No clumsy window hiding",
@@ -24,26 +36,26 @@ const features = [
     ],
   },
   {
-    title: "Script Editor",
+    title: "Progress Bar",
     description:
-      "Write and organize scripts without switching apps. Add cues like [PAUSE] or [SMILE] to guide delivery while everything saves locally.",
-    colorClass: "slate",
+      "Turn on a thin script progress line when you want a quick sense of where you are without adding another bulky control lane.",
+    colorClass: "warm",
     benefits: [
-      "Distraction-free writing",
-      "Performance cue markers",
-      "Collections and folders",
-      "Import and export support",
+      "Optional during sessions",
+      "Tracks script progress",
+      "Works in Notch and Pill Windows",
+      "Stays out of the reading path",
     ],
   },
   {
     title: "Pill Windows",
     description:
-      "Not using a MacBook Pro? Pill windows give you a floating teleprompter you can place anywhere and tailor to your setup.",
-    colorClass: "warm",
+      "Pill Windows give you floating teleprompters you can place anywhere, sync with the Notch Overlay, or customize independently for each display.",
+    colorClass: "sage",
     benefits: [
       "Works on any Mac",
       "Place on external displays",
-      "Fully customizable",
+      "Per-window customization",
       "Same stealth behavior",
     ],
   },

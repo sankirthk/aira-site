@@ -2,7 +2,7 @@ export function PrivacySection() {
   const commitments = [
     {
       title: "On-device processing",
-      body: "Voice activated scrolling uses Apple's on-device speech recognition. Nothing is sent to external servers. No audio leaves your computer.",
+      body: "Word Matching Sync, sound activated scrolling, and word highlighting run on-device. Nothing is sent to external servers. No audio leaves your computer.",
     },
     {
       title: "Local storage",

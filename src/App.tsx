@@ -1,3 +1,4 @@
+import { ComparisonSection } from "./components/ComparisonSection";
 import { ControlsSection } from "./components/ControlsSection";
 import { FAQSection } from "./components/FAQSection";
 import { HeroSection } from "./components/HeroSection";
@@ -31,6 +32,7 @@ export function App() {
 
       <main>
         <HeroSection />
+        <ComparisonSection />
         <TrustStrip />
         <ProductShowcase />
         <ControlsSection />

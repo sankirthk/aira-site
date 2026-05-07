@@ -3,21 +3,21 @@ import { latestRelease } from "../content/release";
 const steps = [
   {
     number: "01",
-    title: "Download the DMG",
+    title: "Download",
     description:
-      "Click download. The file saves to your Downloads folder and macOS verifies it automatically.",
+      "Get the DMG and open it from your Downloads folder.",
   },
   {
     number: "02",
-    title: "Move to Applications",
+    title: "Install",
     description:
-      "Open the DMG and drag Aira into Applications. Eject when done. Standard macOS installation.",
+      "Drag Aira into Applications.",
   },
   {
     number: "03",
-    title: "Launch and grant access",
+    title: "Launch",
     description:
-      "Open Aira from Applications. macOS will ask for accessibility, microphone, and speech recognition permissions — accessibility for global keyboard shortcuts, microphone and speech recognition for voice-activated scrolling. No account, no sign-up.",
+      "Open Aira and grant microphone, speech recognition, and accessibility access.",
   },
 ];
 
@@ -26,13 +26,19 @@ export function InstallationGuide() {
     <section className="section install-section" id="download">
       <div className="shell install-shell">
         <header className="section-header section-header-light">
-          <h2>Ready in 60 seconds</h2>
-          <p>Standard macOS installation. No registration, no payment.</p>
+          <h2>Ready in under a minute</h2>
+          <p>
+            Aira installs like any standard Mac app. Free forever, with no
+            account, no setup flow, and no payment required.
+          </p>
         </header>
 
         <div className="install-list">
           {steps.map((step) => (
             <article className="install-step" key={step.number}>
+              <div className="install-step-icon" aria-hidden="true">
+                {step.number}
+              </div>
               <div>
                 <h3>{step.title}</h3>
                 <p>{step.description}</p>
