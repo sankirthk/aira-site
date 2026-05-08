@@ -21,25 +21,47 @@ export type ChangelogEntry = {
 };
 
 export const latestRelease: ReleaseMetadata = {
-  version: "1.0.0-beta.7",
-  tag: "v1.0.0-beta.7",
+  version: "1.0.0-beta.7.1",
+  tag: "v1.0.0-beta.7.1",
   releaseDate: "2026-05-08",
   betaLabel: "Public Beta",
   notarized: true,
   dmgUrl:
-    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.7/Aira-1.0.0-beta.7.dmg",
+    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0-beta.7.1/Aira-1.0.0-beta.7.1.dmg",
   releaseNotesUrl:
-    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.7",
+    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0-beta.7.1",
   distributionRepo: "sankirthk/aira-releases",
   summary: [
-    "**Script progress indicator is now included.** Active Notch and Pill overlays can show a thin bottom-edge progress line during presenter sessions.",
-    "**Persisted System setting.** `Show script progress` is available in System > During Session and defaults off.",
-    "**Live session updates.** Toggling the setting updates active overlay windows without requiring a new session.",
-    "**No scroll behavior changes.** The indicator is visual only; it does not add a separate lane, intercept pointer input, or alter scroll math.",
+    "**Clear Word Tracking startup state.** First cold Word Tracking sessions show `Getting ready...` while WhisperKit prepares.",
+    "**No silent non-scrolling start.** Speech-driven scrolling begins only after the Word Tracking backend reports ready.",
+    "**No arbitrary extra countdown.** After readiness, Aira honors the configured countdown exactly, including starting immediately when countdown is set to 0.",
+    "**One-time gate per launch.** Once Word Tracking has prepared, later Word Tracking sessions skip the readiness screen.",
   ],
 };
 
 export const changelog = [
+  {
+    version: "1.0.0-beta.7.1",
+    date: "2026-05-08",
+    tag: "beta",
+    changes: [
+      {
+        type: "fixed",
+        description:
+          "Cold Word Tracking launches now show `Getting ready...` while WhisperKit prepares instead of allowing a silent non-scrolling start.",
+      },
+      {
+        type: "fixed",
+        description:
+          "Word Tracking startup now honors the configured countdown after model readiness, including immediate start when countdown is set to 0.",
+      },
+      {
+        type: "changed",
+        description:
+          "Word Tracking readiness is remembered for the current app launch so later sessions skip the preparation screen.",
+      },
+    ],
+  },
   {
     version: "1.0.0-beta.7",
     date: "2026-05-08",
