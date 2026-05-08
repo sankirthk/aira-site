@@ -23,7 +23,7 @@ export type ChangelogEntry = {
 export const latestRelease: ReleaseMetadata = {
   version: "1.0.0-beta.7",
   tag: "v1.0.0-beta.7",
-  releaseDate: "2026-05-07",
+  releaseDate: "2026-05-08",
   betaLabel: "Public Beta",
   notarized: true,
   dmgUrl:
@@ -42,7 +42,7 @@ export const latestRelease: ReleaseMetadata = {
 export const changelog = [
   {
     version: "1.0.0-beta.7",
-    date: "2026-05-07",
+    date: "2026-05-08",
     tag: "beta",
     changes: [
       {
