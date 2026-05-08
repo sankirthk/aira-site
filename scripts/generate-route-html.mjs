@@ -10,9 +10,12 @@
  * 2. Injects a static, crawler-visible body snapshot into #root so critical
  *    page copy exists in the raw HTML before React loads.
  *
- * 3. For each route, writes dist/<route>/index.html with route-specific
- *    title, description, canonical, og:*, twitter:* tags, and body snapshot
- *    so crawlers and social scrapers see correct content without JavaScript.
+ * 3. For each route, writes both dist/<route>.html and
+ *    dist/<route>/index.html with route-specific title, description,
+ *    canonical, og:*, twitter:* tags, and body snapshot so crawlers and social
+ *    scrapers see correct content without JavaScript. The root .html aliases
+ *    let GitHub Pages serve extensionless URLs such as /privacy without a
+ *    trailing-slash redirect.
  *
  * 4. Writes the updated dist/index.html back and regenerates dist/404.html
  *    (the GitHub Pages SPA fallback) from the same patched base.
@@ -378,6 +381,7 @@ for (const route of routes) {
     ),
     route.snapshot,
   );
+  writeFileSync(join(distDir, `${route.path}.html`), html);
   writeFileSync(join(dir, "index.html"), html);
   console.log(`✓ Generated dist/${route.path}/index.html`);
 }
