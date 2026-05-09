@@ -127,6 +127,21 @@ svg {
   box-shadow: 0 18px 36px rgba(191, 125, 108, 0.32);
 }
 
+.button-app-store {
+  background: rgba(255, 253, 249, 0.72);
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  box-shadow: 0 14px 30px rgba(201, 139, 122, 0.14);
+}
+
+.button-app-store:hover,
+.button-app-store:focus-visible {
+  background: rgba(201, 139, 122, 0.12);
+  color: #bf7d6c;
+  border-color: #bf7d6c;
+  box-shadow: 0 18px 36px rgba(191, 125, 108, 0.2);
+}
+
 .button-secondary {
   border-color: rgba(43, 43, 43, 0.18);
   background: rgba(255, 255, 255, 0.4);
@@ -248,6 +263,7 @@ svg {
 .hero-actions {
   display: flex;
   justify-content: flex-start;
+  gap: 14px;
   margin-top: 24px;
 }
 
@@ -863,6 +879,13 @@ svg {
   text-align: center;
 }
 
+.install-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
 .controls-section {
   background: linear-gradient(
     180deg,
@@ -1314,6 +1337,16 @@ svg {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .site-nav .button-nav {
+    width: auto;
+    margin-left: auto;
+    padding: 5px 12px;
+    border-width: 1px;
+    font-size: 0.9rem;
+    line-height: 1;
+    box-shadow: none;
   }
 
   .hero-title {
