@@ -36,28 +36,30 @@ export function HeroSection() {
             video calls, screen sharing, and screen recordings.
           </p>
 
-          <div className="hero-actions">
-            <a
-              className="button button-primary"
-              href={latestRelease.dmgUrl}
-              download
-            >
-              <DownloadIcon />
-              Download DMG
-            </a>
-            <a
-              className="button button-primary button-app-store"
-              href={appStoreUrl}
-              aria-label="View Aira - Notch Teleprompter on the Mac App Store"
-            >
-              <AppleIcon />
-              Mac App Store
-            </a>
-          </div>
+          <div className="hero-cta-block">
+            <div className="hero-actions">
+              <a
+                className="button button-primary"
+                href={latestRelease.dmgUrl}
+                download
+              >
+                <DownloadIcon />
+                Download DMG
+              </a>
+              <a
+                className="button button-primary button-app-store"
+                href={appStoreUrl}
+                aria-label="View Aira - Notch Teleprompter on the Mac App Store"
+              >
+                <AppleIcon />
+                Mac App Store
+              </a>
+            </div>
 
-          <p className="hero-footnote">
-            macOS 14.4+ • Free • No account required
-          </p>
+            <p className="hero-footnote">
+              macOS 14.4+ • Free • No account required
+            </p>
+          </div>
         </div>
 
         <div className="hero-mockup" aria-hidden="true">
