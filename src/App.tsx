@@ -4,6 +4,7 @@ import { FAQSection } from "./components/FAQSection";
 import { HeroSection } from "./components/HeroSection";
 import { InstallationGuide } from "./components/InstallationGuide";
 import { MarketingFooter } from "./components/MarketingFooter";
+import { ProductHuntSection } from "./components/ProductHuntSection";
 import { ProductShowcase } from "./components/ProductShowcase";
 import { TrustStrip } from "./components/TrustStrip";
 import { Wordmark } from "./components/Wordmark";
@@ -36,6 +37,7 @@ export function App() {
         <TrustStrip />
         <ProductShowcase />
         <ControlsSection />
+        <ProductHuntSection />
         <InstallationGuide />
         <FAQSection />
       </main>

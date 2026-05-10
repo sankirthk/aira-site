@@ -127,21 +127,6 @@ svg {
   box-shadow: 0 18px 36px rgba(191, 125, 108, 0.32);
 }
 
-.button-app-store {
-  background: rgba(255, 253, 249, 0.72);
-  color: var(--color-secondary);
-  border-color: var(--color-secondary);
-  box-shadow: 0 14px 30px rgba(201, 139, 122, 0.14);
-}
-
-.button-app-store:hover,
-.button-app-store:focus-visible {
-  background: rgba(201, 139, 122, 0.12);
-  color: #bf7d6c;
-  border-color: #bf7d6c;
-  box-shadow: 0 18px 36px rgba(191, 125, 108, 0.2);
-}
-
 .button-secondary {
   border-color: rgba(43, 43, 43, 0.18);
   background: rgba(255, 255, 255, 0.4);
@@ -269,8 +254,29 @@ svg {
 
 .hero-actions {
   display: flex;
+  align-items: center;
   justify-content: flex-start;
   gap: 14px;
+}
+
+.app-store-badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: transform 160ms ease, filter 160ms ease;
+}
+
+.app-store-badge-link:hover,
+.app-store-badge-link:focus-visible {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 12px 24px rgba(43, 43, 43, 0.16));
+}
+
+.app-store-badge {
+  width: 180px;
+  height: 60px;
+  object-fit: contain;
 }
 
 .hero-scroll-cue {
@@ -823,6 +829,43 @@ svg {
 .install-section {
   background: var(--color-primary);
   color: var(--color-background);
+}
+
+.product-hunt-section {
+  background: linear-gradient(
+    180deg,
+    rgba(132, 150, 136, 0.15),
+    rgba(245, 242, 236, 0.96)
+  );
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.product-hunt-shell {
+  display: grid;
+  justify-items: center;
+}
+
+.product-hunt-header {
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+
+.product-hunt-badge {
+  display: inline-flex;
+  border-radius: 14px;
+  box-shadow: 0 16px 36px rgba(43, 43, 43, 0.1);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.product-hunt-badge:hover,
+.product-hunt-badge:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 42px rgba(43, 43, 43, 0.14);
+}
+
+.product-hunt-badge img {
+  border-radius: 14px;
 }
 
 .footer {
