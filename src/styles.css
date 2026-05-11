@@ -252,6 +252,10 @@ svg {
   margin-top: 24px;
 }
 
+.hero-cta-mobile {
+  display: none;
+}
+
 .hero-actions {
   display: flex;
   align-items: center;
@@ -1452,11 +1456,20 @@ video.visual-stack-video {
     align-items: center;
   }
 
+  .hero-cta-desktop {
+    display: none;
+  }
+
+  .hero-cta-mobile {
+    display: flex;
+    margin-top: 18px;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: min(100%, 220px);
+    width: min(100%, 260px);
   }
 
   .button {

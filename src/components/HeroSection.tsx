@@ -37,35 +37,7 @@ export function HeroSection() {
             video calls, screen sharing, and screen recordings.
           </p>
 
-          <div className="hero-cta-block">
-            <div className="hero-actions">
-              <a
-                className="button button-primary"
-                href={latestRelease.dmgUrl}
-                download
-              >
-                <DownloadIcon />
-                Download DMG
-              </a>
-              <a
-                className="app-store-badge-link"
-                href={appStoreUrl}
-                aria-label="View Aira - Notch Teleprompter on the Mac App Store"
-              >
-                <img
-                  className="app-store-badge"
-                  src={appStoreBadge}
-                  alt=""
-                  width="180"
-                  height="60"
-                />
-              </a>
-            </div>
-
-            <p className="hero-footnote">
-              macOS 14.4+ • Free • No account required
-            </p>
-          </div>
+          <HeroDownloadActions className="hero-cta-desktop" />
         </div>
 
         <div className="hero-mockup" aria-hidden="true">
@@ -82,6 +54,8 @@ export function HeroSection() {
             />
           </div>
         </div>
+
+        <HeroDownloadActions className="hero-cta-mobile" />
       </div>
 
       <div className="hero-scroll-cue">
@@ -90,6 +64,38 @@ export function HeroSection() {
         </a>
       </div>
     </section>
+  );
+}
+
+function HeroDownloadActions({ className }: { className?: string }) {
+  return (
+    <div className={`hero-cta-block ${className ?? ""}`}>
+      <div className="hero-actions">
+        <a
+          className="button button-primary"
+          href={latestRelease.dmgUrl}
+          download
+        >
+          <DownloadIcon />
+          Download DMG
+        </a>
+        <a
+          className="app-store-badge-link"
+          href={appStoreUrl}
+          aria-label="View Aira - Notch Teleprompter on the Mac App Store"
+        >
+          <img
+            className="app-store-badge"
+            src={appStoreBadge}
+            alt=""
+            width="180"
+            height="60"
+          />
+        </a>
+      </div>
+
+      <p className="hero-footnote">macOS 14.4+ • Free • No account required</p>
+    </div>
   );
 }
 
