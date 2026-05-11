@@ -40,7 +40,7 @@ export function MarketingFooter() {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href={latestRelease.dmgUrl}>Download Beta</a>
+              <a href={latestRelease.dmgUrl}>Download Aira</a>
             </li>
             <li>
               <a href="#features">Features</a>

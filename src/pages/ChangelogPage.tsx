@@ -28,8 +28,7 @@ export function ChangelogPage() {
           <div className="changelog-empty">
             <p>
               No releases yet — Aira is in active development.{" "}
-              <a href={latestRelease.dmgUrl}>Download the current beta</a> to
-              try it now.
+              <a href={latestRelease.dmgUrl}>Download Aira</a> to try it now.
             </p>
           </div>
         ) : (

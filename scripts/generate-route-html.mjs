@@ -33,8 +33,8 @@ const releaseFile = join("src", "content", "release.ts");
 const releaseTs = readFileSync(releaseFile, "utf-8");
 const version = releaseTs.match(/version:\s*"([^"]+)"/)?.[1] ?? "";
 const dmgUrl = releaseTs.match(/dmgUrl:\s*"([^"]+)"/)?.[1] ?? "";
-const betaLabel =
-  releaseTs.match(/betaLabel:\s*"([^"]+)"/)?.[1] ?? "Current beta";
+const releaseLabel =
+  releaseTs.match(/betaLabel:\s*"([^"]+)"/)?.[1] ?? "Official Launch";
 const appStoreUrl =
   "https://apps.apple.com/us/app/aira-notch-teleprompter/id6762571829?mt=12";
 const productHuntUrl =
@@ -199,7 +199,7 @@ function rootSnapshot(kind) {
             heading: version ? `Latest release: v${version}` : "Latest release",
             items: [
               "Voice-sync reliability, scrolling behavior, release packaging, and website metadata are tracked in public release notes.",
-              "Download the current beta from the latest public release.",
+              "Download the latest release from the public release page.",
             ],
           },
         ],
@@ -247,7 +247,7 @@ function rootSnapshot(kind) {
             heading: "Use of Aira",
             items: [
               "The license covers the Aira application, updates, and related documentation.",
-              "Aira is provided as a free download during the public beta.",
+              "Aira is provided as a free download.",
             ],
           },
         ],
@@ -308,7 +308,7 @@ function homepageSnapshot() {
         <section class="hero section">
           <div class="shell hero-layout">
             <div class="hero-copy-block">
-              <p class="badge">${escapeHtml(betaLabel)}</p>
+              <p class="badge">${escapeHtml(releaseLabel)}</p>
               <h1 class="hero-title">Stay on script. Look more natural on camera.</h1>
               <p class="hero-copy">Aira places your script directly below the camera, making it easier to maintain eye contact and deliver your message smoothly across video calls, screen sharing, and screen recordings.</p>
               <p>
