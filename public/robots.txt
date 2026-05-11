@@ -32,6 +32,5 @@ Disallow: /
 
 # Content usage preferences
 # Search indexing: yes. AI training on content: no. AI-generated responses using page content: yes.
-Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 Sitemap: https://useaira.co/sitemap.xml

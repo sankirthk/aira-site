@@ -1,8 +1,36 @@
 import notchLeftTilt from "../assets/ProductShowcase/NotchRightTilt.png";
 import pillRightTilt from "../assets/ProductShowcase/PillWindowsLeftTilt.png";
 import editorLeft from "../assets/ProductShowcase/ScriptEditorRightTilt.png";
+import stealthModeVideo from "../assets/ProductShowcase/StealthMode.mp4";
+import wordMatchingVideo from "../assets/ProductShowcase/WordMatching.mp4";
 
 const showcaseItems = [
+  {
+    eyebrow: "Visible only to you",
+    title: "Stealth Mode",
+    body: "The overlay is hidden from Zoom, Google Meet, Teams, screen recordings, and screen sharing — visible only to you.",
+    bullets: [
+      "Hidden from major video apps",
+      "Invisible in screen recordings",
+      "Visible on your Mac while presenting",
+      "Keeps your audience focused on you",
+    ],
+    tone: "terracotta",
+    visual: "stealth",
+  },
+  {
+    eyebrow: "Follows what you say",
+    title: "Word Matching Sync",
+    body: "Aira follows the words you're actually saying. Skip ahead, recover from a missed line, and keep moving without touching the overlay.",
+    bullets: [
+      "Tracks your spoken words",
+      "Recovers when you skip ahead",
+      "Keeps pace without manual controls",
+      "Runs with on-device recognition",
+    ],
+    tone: "sage",
+    visual: "wordMatching",
+  },
   {
     eyebrow: "Always near the camera",
     title: "Notch Overlay",
@@ -72,7 +100,13 @@ export function ProductShowcase() {
                 ))}
               </ul>
             </div>
-            <div className="showcase-visual-wrap">
+            <div
+              className={`showcase-visual-wrap ${
+                item.visual === "stealth" || item.visual === "wordMatching"
+                  ? "showcase-visual-wrap-video"
+                  : ""
+              }`}
+            >
               <ShowcaseVisual variant={item.visual} />
             </div>
           </article>
@@ -82,7 +116,25 @@ export function ProductShowcase() {
   );
 }
 
-function ShowcaseVisual({ variant }: { variant: "notch" | "pill" | "editor" }) {
+function ShowcaseVisual({
+  variant,
+}: {
+  variant: "stealth" | "wordMatching" | "notch" | "pill" | "editor";
+}) {
+  if (variant === "stealth") {
+    return <VideoVisual label="Stealth Mode demo" src={stealthModeVideo} />;
+  }
+
+  if (variant === "wordMatching") {
+    return (
+      <VideoVisual
+        label="Word Matching Sync demo"
+        src={wordMatchingVideo}
+        alignment="left"
+      />
+    );
+  }
+
   if (variant === "notch") {
     return <SingleVisual label="Notch close-up" src={notchLeftTilt} />;
   }
@@ -108,10 +160,49 @@ function SingleVisual({
   return (
     <div
       className={`visual-single visual-single-${alignment}`}
+      role="img"
       aria-label={label}
     >
       <figure className="visual-single-card">
-        <img src={src} alt="" className="visual-stack-image" />
+        <img
+          src={src}
+          alt=""
+          className="visual-stack-image"
+          width="1920"
+          height="1440"
+          loading="lazy"
+          decoding="async"
+        />
+      </figure>
+    </div>
+  );
+}
+
+function VideoVisual({
+  label,
+  src,
+  alignment = "right",
+}: {
+  label: string;
+  src: string;
+  alignment?: "left" | "right";
+}) {
+  return (
+    <div
+      className={`visual-single visual-single-${alignment}`}
+      role="img"
+      aria-label={label}
+    >
+      <figure className="visual-single-card visual-video-card">
+        <video
+          src={src}
+          className="visual-stack-image visual-stack-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        />
       </figure>
     </div>
   );

@@ -23,6 +23,8 @@ export function ProductHuntSection() {
             alt="Aira - A Mac teleprompter that stays out of view | Product Hunt"
             width="250"
             height="54"
+            loading="lazy"
+            decoding="async"
             src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1143215&theme=neutral&t=1778436380044"
           />
         </a>

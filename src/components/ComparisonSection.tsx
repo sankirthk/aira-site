@@ -113,7 +113,18 @@ export function ComparisonSection() {
                     </div>
                     <div className="comparison-frame">
                       <div className="comparison-image-window">
-                        <img src={image.src} alt={image.alt} />
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          width={
+                            image.src === whatYouSeeMainImage ? 4078 : 4096
+                          }
+                          height={
+                            image.src === whatYouSeeMainImage ? 2459 : 2481
+                          }
+                          loading="lazy"
+                          decoding="async"
+                        />
                       </div>
                       {image.callout ? (
                         <div
