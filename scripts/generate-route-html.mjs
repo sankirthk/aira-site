@@ -35,6 +35,10 @@ const version = releaseTs.match(/version:\s*"([^"]+)"/)?.[1] ?? "";
 const dmgUrl = releaseTs.match(/dmgUrl:\s*"([^"]+)"/)?.[1] ?? "";
 const betaLabel =
   releaseTs.match(/betaLabel:\s*"([^"]+)"/)?.[1] ?? "Current beta";
+const appStoreUrl =
+  "https://apps.apple.com/us/app/aira-notch-teleprompter/id6762571829?mt=12";
+const productHuntUrl =
+  "https://www.producthunt.com/products/aira-7?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-aira-8";
 
 // ---------------------------------------------------------------------------
 // Route definitions
@@ -307,7 +311,10 @@ function homepageSnapshot() {
               <p class="badge">${escapeHtml(betaLabel)}</p>
               <h1 class="hero-title">Stay on script. Look more natural on camera.</h1>
               <p class="hero-copy">Aira places your script directly below the camera, making it easier to maintain eye contact and deliver your message smoothly across video calls, screen sharing, and screen recordings.</p>
-              ${dmgUrl ? `<p><a class="button button-primary" href="${escapeHtml(dmgUrl)}">Download for macOS</a></p>` : ""}
+              <p>
+                ${dmgUrl ? `<a class="button button-primary" href="${escapeHtml(dmgUrl)}">Download DMG</a>` : ""}
+                <a class="button button-primary" href="${escapeHtml(appStoreUrl)}">Download on the Mac App Store</a>
+              </p>
               <p class="hero-footnote">macOS 14.4+ • Free • No account required</p>
             </div>
           </div>
@@ -337,6 +344,23 @@ function homepageSnapshot() {
           <div class="shell">
             <h2>Flexible controls for every setup</h2>
             <p>Use Word Matching Sync, sound activated scrolling, classic manual pacing, keyboard shortcuts, progress display, and local script import for PDF, DOCX, TXT, and Markdown.</p>
+          </div>
+        </section>
+        <section class="section product-hunt-section">
+          <div class="shell">
+            <h2>See Aira on Product Hunt</h2>
+            <p>Aira is live on Product Hunt. Take a look, join the conversation, and share it with Mac creators who need a calmer way to present.</p>
+            <p><a href="${escapeHtml(productHuntUrl)}">View Aira on Product Hunt</a></p>
+          </div>
+        </section>
+        <section class="section install-section" id="download">
+          <div class="shell">
+            <h2>Ready in under a minute</h2>
+            <p>Aira installs like any standard Mac app. Free forever, with no account, no setup flow, and no payment required.</p>
+            <p>
+              ${dmgUrl ? `<a class="button button-primary" href="${escapeHtml(dmgUrl)}">Download DMG</a>` : ""}
+              <a class="button button-primary" href="${escapeHtml(appStoreUrl)}">Download on the Mac App Store</a>
+            </p>
           </div>
         </section>
         <section class="section" id="faq">
