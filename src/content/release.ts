@@ -56,4 +56,60 @@ export const changelog = [
       },
     ],
   },
+  {
+    version: "1.0.0",
+    date: "2026-05-11",
+    tag: "release",
+    changes: [
+      {
+        type: "added",
+        description:
+          "Word Matching Sync with offline on-device speech recognition via bundled WhisperKit models.",
+      },
+      {
+        type: "added",
+        description:
+          "Sound Activated Scroll with adjustable microphone sensitivity.",
+      },
+      {
+        type: "added",
+        description:
+          "Notch Overlay that sits near the MacBook camera and wraps around the built-in notch.",
+      },
+      {
+        type: "added",
+        description:
+          "Pill Windows, movable floating overlays placeable anywhere on screen and syncable with the Notch session.",
+      },
+      {
+        type: "added",
+        description:
+          "Stealth Mode support for hiding direct-distribution overlays from Zoom, Google Meet, Teams, and screen recordings.",
+      },
+      {
+        type: "added",
+        description:
+          "Local-first script library with collections, starring, drag-and-drop organization, and import for PDF, DOCX, TXT, and Markdown.",
+      },
+      {
+        type: "added",
+        description:
+          "Spoken-word highlighting as a visual session aid across Word Matching Sync, Sound Activated Scroll, and Classic modes.",
+      },
+      {
+        type: "added",
+        description: "Script progress indicator during presenter sessions.",
+      },
+      {
+        type: "added",
+        description:
+          "Per-overlay appearance and readability customization including font, spacing, shadow, padding, and colors.",
+      },
+      {
+        type: "added",
+        description:
+          "Sparkle-based automatic updates over a signed stable channel for direct-distribution builds.",
+      },
+    ],
+  },
 ];
