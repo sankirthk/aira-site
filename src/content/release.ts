@@ -21,84 +21,38 @@ export type ChangelogEntry = {
 };
 
 export const latestRelease: ReleaseMetadata = {
-  version: "1.0.0",
-  tag: "v1.0.0",
-  releaseDate: "2026-05-11",
+  version: "1.0.1",
+  tag: "v1.0.1",
+  releaseDate: "2026-05-12",
   betaLabel: "Official Launch",
   notarized: true,
   dmgUrl:
-    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.0/Aira-1.0.0.dmg",
+    "https://github.com/sankirthk/aira-releases/releases/download/v1.0.1/Aira-1.0.1.dmg",
   releaseNotesUrl:
-    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.0",
+    "https://github.com/sankirthk/aira-releases/releases/tag/v1.0.1",
   distributionRepo: "sankirthk/aira-releases",
   summary: [
-    "**Word Matching Sync.** Offline, on-device speech recognition follows the words you are speaking using bundled WhisperKit models.",
-    "**Sound Activated Scroll.** Aira can scroll while it hears speech activity and pause when the room goes quiet, with adjustable microphone sensitivity.",
-    "**Notch Overlay.** The primary overlay sits near the camera and wraps around the built-in MacBook notch for natural eye contact.",
-    "**Pill Windows.** Movable floating overlays can sit anywhere on screen, mirror the Notch session, or run separately selected scripts.",
-    "**Stealth Mode.** Direct-distribution overlays can stay hidden from Zoom, Google Meet, Teams, and screen recordings.",
-    "**Local-first script library.** Scripts stay on your Mac with collections, starring, drag-and-drop organization, and import support for PDF, DOCX, TXT, and Markdown.",
-    "**Spoken-word highlighting.** Highlighting can visually track delivery in Word Matching Sync, Sound Activated Scroll, and Classic modes.",
-    "**Script progress indicator.** Presenter sessions can show a thin progress line at the bottom edge of the overlay.",
-    "**Appearance and readability controls.** Tune font, spacing, shadow, padding, overlay color, and per-overlay readability settings.",
-    "**Signed stable updates.** Direct-distribution builds use Sparkle automatic updates over the signed stable channel.",
+    "**Better recognition during calls.** Word Matching Sync now accepts usable Zoom and call-processed speech that previously sat below the recognition preprocessing floor.",
+    "**Stronger bounded gain for quiet speech.** Aira boosts valid low-level microphone input more aggressively before speech recognition while keeping noise rejection in place.",
+    "**Regression coverage for call audio.** The test suite now covers call-processed speech levels below the old gate.",
   ],
 };
 
 export const changelog = [
   {
-    version: "1.0.0",
-    date: "2026-05-11",
+    version: "1.0.1",
+    date: "2026-05-12",
     tag: "release",
     changes: [
       {
-        type: "added",
+        type: "fixed",
         description:
-          "Word Matching Sync with offline on-device speech recognition via bundled WhisperKit models.",
+          "Word Matching Sync now accepts usable Zoom and call-processed speech below the old recognition preprocessing floor.",
       },
       {
-        type: "added",
+        type: "changed",
         description:
-          "Sound Activated Scroll with adjustable microphone sensitivity.",
-      },
-      {
-        type: "added",
-        description:
-          "Notch Overlay that sits near the MacBook camera and wraps around the built-in notch.",
-      },
-      {
-        type: "added",
-        description:
-          "Pill Windows, movable floating overlays placeable anywhere on screen and syncable with the Notch session.",
-      },
-      {
-        type: "added",
-        description:
-          "Stealth Mode support for hiding direct-distribution overlays from Zoom, Google Meet, Teams, and screen recordings.",
-      },
-      {
-        type: "added",
-        description:
-          "Local-first script library with collections, starring, drag-and-drop organization, and import for PDF, DOCX, TXT, and Markdown.",
-      },
-      {
-        type: "added",
-        description:
-          "Spoken-word highlighting as a visual session aid across Word Matching Sync, Sound Activated Scroll, and Classic modes.",
-      },
-      {
-        type: "added",
-        description: "Script progress indicator during presenter sessions.",
-      },
-      {
-        type: "added",
-        description:
-          "Per-overlay appearance and readability customization including font, spacing, shadow, padding, and colors.",
-      },
-      {
-        type: "added",
-        description:
-          "Sparkle-based automatic updates over a signed stable channel for direct-distribution builds.",
+          "Recognition preprocessing now applies stronger bounded gain to quiet but valid microphone input.",
       },
     ],
   },
